@@ -169,6 +169,33 @@ body {
   object-position: top;
 }
 
+/* --------- Skills --------------- */
+
+#skills {
+  width: 90%;
+  height: 100vh;
+}
+
+.skills__skills-text-section {
+  width: 30em;
+}
+
+.skills__skills-heading span {
+  color: #416cdf;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.skills__skills-heading h2 {
+  color: #ffffff;
+  font-size: 3.3rem;
+  margin: 0%;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
 
 
 
