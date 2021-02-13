@@ -122,7 +122,20 @@ body {
   box-shadow: 2px 2px 30px rgba(0,0,0,0.5);
   letter-spacing: 1px;
   font-size: 0.9rem;
- 
+}
+
+.main__btns__download-cv-btn {
+  background: linear-gradient(90deg, #2788e2 20%, #3b58b8);
+  margin-right: 1.5em;
+}
+
+.main__btns__hireMe-btn {
+  background: #242830;
+}
+
+.main__btns__hireMe-btn:hover {
+  background-color: #0f8ce2;
+  transition: all ease 0.3s;
 }
 
 
