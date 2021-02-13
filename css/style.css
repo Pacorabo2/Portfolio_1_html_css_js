@@ -1,0 +1,43 @@
+@use 'reset';
+@use 'vars';
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto Mono', monospace;
+  color: azure;
+  background-color: #111111;
+}
+
+.navigation {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2.5em;
+  background-image: linear-gradient(180deg, rgb(17,17,17) 15%, transparent);
+}
+
+.navigation__logo {
+  height: 7em;
+}
+
+.navigation__logo img {
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.navigation__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+}
+
+.navigation__menu__li {
+  padding: 1.5em;
+}
+
