@@ -38,6 +38,24 @@ body {
 }
 
 .navigation__menu__li {
-  padding: 1.5em;
+  padding: 2.5em;
 }
+
+.navigation__menu__li:hover {
+  cursor: pointer;
+  color: aquamarine;
+  transition: all ease 0.5s;
+  
+}
+
+.navigation__hireMe {
+  color: aquamarine;
+}
+
+.navigation__hireMe:hover {
+  color: #1a82e2;
+  transition: all ease 0.5s;
+}
+
+
 
