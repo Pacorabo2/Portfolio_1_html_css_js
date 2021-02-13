@@ -138,4 +138,37 @@ body {
   transition: all ease 0.3s;
 }
 
+/* --------- Picture model ------*/
+.main__model {
+  width: 31em;
+  height: 31em;
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  transform: translate(-7%, -50%);
+}
+
+.main__model img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.main__model-bg {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 45%;
+  height: 100%;
+}
+
+.main__model-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top;
+}
+
+
+
 
