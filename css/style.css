@@ -173,7 +173,10 @@ body {
 
 #skills {
   width: 90%;
-  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto auto 3em auto;
 }
 
 .skills__skills-text-section {
@@ -214,11 +217,12 @@ body {
 .skills__s-box-container__skill-box__s-box-icon img {
   width: 2em;
   height: 2em;
+  /* border-radius: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f0f0f011;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .skills__s-box-container__skill-box__s-box-text strong {
