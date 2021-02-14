@@ -278,5 +278,20 @@ body {
   margin: 0.5em auto;
 }
 
+.introduction__heading {
+  width: 60%;
+}
+
+.introduction__heading strong {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.introduction__heading p {
+  margin-top: 0.5em;
+  color: #8a94a763;
+}
+
 
 
