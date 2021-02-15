@@ -293,5 +293,16 @@ body {
   color: #8a94a763;
 }
 
+.introduction__video {
+  margin-top: 3em;
+}
+
+.introduction__video iframe {
+  width: 712px;
+  height: 400px;
+}
+
+
+
 
 
