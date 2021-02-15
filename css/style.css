@@ -331,7 +331,7 @@ body {
 .services__box-container {
   width: 90%;
   margin-top: 2.2em;
-  border: 1px solid #ffffff;
+  /* border: 1px solid #ffffff; */
 }
 
 .services__box-container__service-box {
@@ -339,12 +339,32 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0 1.2em 1.2em 1.2em;
+  /* border: 1px solid #ffffff; */
 }
 
 .services__box-container__service-box img {
   width: 2em;
   height: 2em;
+  /* font-size: 2.5rem; */
+  background: linear-gradient(90deg, #2788e2, 20%, #3b67b8);
+  margin-bottom: 0.8em;
+  margin-right: auto;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
+
+.services__box-container__service-box p {
+  color: #8a94a783;
+  font-size: 0.95rem;
+}
+
+.services__box-container__service-box strong {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #e4e4e4;
+}
+
 
 
 
