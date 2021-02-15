@@ -328,3 +328,23 @@ body {
   display: flex;
 }
 
+.services__box-container {
+  width: 90%;
+  margin-top: 2.2em;
+  border: 1px solid #ffffff;
+}
+
+.services__box-container__service-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1.2em 1.2em 1.2em;
+}
+
+.services__box-container__service-box img {
+  width: 2em;
+  height: 2em;
+}
+
+
+
