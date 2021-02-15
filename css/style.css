@@ -331,6 +331,9 @@ body {
 .services__box-container {
   width: 90%;
   margin-top: 2.2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
   /* border: 1px solid #ffffff; */
 }
 
