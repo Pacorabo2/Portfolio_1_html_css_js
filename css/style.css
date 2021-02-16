@@ -616,3 +616,42 @@ body {
     display: block;
     /* 1'06'12 */
   }
+
+  .navigation__menu::before {
+    position: absolute;
+    left: 0;
+    top: -3.8em;
+    content: '';
+    background-color: #111111;
+  }
+
+  .main__model {
+    display: none;
+  }
+
+  .main__text {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #skills {
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 2.8em;
+  }
+
+  .skills__skills-text-section {
+    width: 25em;
+  }
+
+  .skills__skill-img {
+    width: 40%;
+    height: 20em;
+  }
+
+  .skills__skill-img img {
+    object-fit: cover;
+    object-position: left;
+  }
+  
+}
