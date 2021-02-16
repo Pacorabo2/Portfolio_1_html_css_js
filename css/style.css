@@ -640,8 +640,9 @@ body {
 
   #skills {
     width: 100%;
-    justify-content: space-between;
-    padding-left: 2.8em;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-left: 2.8em; */
   }
 
   .skills__skills-text-section {
@@ -649,8 +650,9 @@ body {
   }
 
   .skills__skill-img {
-    width: 40%;
+    width: 50%;
     height: 20em;
+    margin-top: 3em;
   }
 
   .skills__skill-img img {
