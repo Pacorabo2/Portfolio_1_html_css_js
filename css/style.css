@@ -720,6 +720,15 @@ body {
     .skills__skills-heading h2 {
       font-size: 2rem;
     }
+
+    .main__btns {
+      flex-direction: column;
+    }
+
+    .main__btns a {
+      width: 12em;
+      margin: 0.8em 0;
+    }
     
   }
 }
