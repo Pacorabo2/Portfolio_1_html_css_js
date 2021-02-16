@@ -441,6 +441,39 @@ body {
   text-transform: uppercase;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #14151610;
+  padding: 0.8em;
+  margin-top: 3em;
+  border-top: 1px solid #272729;
+}
+
+.footer-social {
+  display: flex;
+  margin-top: 0.4em;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social img {
+  height: 2.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 1.5em;
+}
+
+.footer-social img:hover {
+  background-color: #fff;
+  /* height: 3.1em; */
+  transition: all ease 0.5s;
+}
+
 
 
 
