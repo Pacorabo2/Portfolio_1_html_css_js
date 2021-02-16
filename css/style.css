@@ -666,3 +666,18 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+@media(max-width:800px) {
+  .introduction__video {
+    width:100%;
+  }
+
+  .introduction__video iframe {
+    width: 100%;
+    height: 38vh;
+  }
+
+  .introduction__heading {
+    width: 80%;
+  }
+}
