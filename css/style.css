@@ -650,21 +650,23 @@ body {
   }
 
   .skills__skill-img {
-    width: 50%;
-    height: 20em;
+    width: 100%;
+    height: 15em;
     margin-top: 3em;
   }
 
   .skills__skill-img img {
-    object-fit: cover;
-    object-position: left;
+    /* object-fit: cover;
+    object-position: left; */
+    height: 100%;
+    width: 100%;
   }
 }
 
 @media(max-width:900px) {
   .introduction__video iframe {
-    width: 43em;
-    height: 25em;
+    width: 30em;
+    height: 10em;
   }
 
   .services__box-container {
@@ -685,5 +687,19 @@ body {
 
   .introduction__heading {
     width: 80%;
+  }
+}
+
+@media(max-width:600px) {
+  .main__text {
+    width: 85%;
+  }
+
+  .skills__skill-img {
+    width: 100%;
+  }
+
+  #contact form {
+    width: 90%;
   }
 }
