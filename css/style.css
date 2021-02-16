@@ -707,6 +707,11 @@ body {
     width: 100%;
   }
 
+  #get-in-touch span {
+    font-size: 1.2rem;
+    width: 20em;
+  }
+
   #contact form {
     width: 90%;
   }
