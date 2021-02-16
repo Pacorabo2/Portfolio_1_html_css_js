@@ -653,5 +653,16 @@ body {
     object-fit: cover;
     object-position: left;
   }
-  
+}
+
+@media(max-width:900px) {
+  .introduction__video iframe {
+    width: 43em;
+    height: 25em;
+  }
+
+  .services__box-container {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
 }
