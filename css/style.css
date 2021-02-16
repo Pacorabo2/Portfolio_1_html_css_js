@@ -474,6 +474,22 @@ body {
   transition: all ease 0.5s;
 }
 
+::selection {
+  color: #e4e4e4;
+  background-color: #416cdf;
+}
+
+/* Adjustements */
+#services,
+#introduction,
+#skills{
+  padding-top: 3.8em;
+}
+
+#introduction {
+  padding-bottom: 2.8em;
+}
+
 
 
 
