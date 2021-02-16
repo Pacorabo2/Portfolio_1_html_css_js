@@ -629,6 +629,10 @@ body {
     display: none;
   }
 
+  .main__model-bg {
+    display: none;
+  }
+
   .main__text {
     left: 50%;
     transform: translate(-50%, -50%);
