@@ -684,11 +684,19 @@ body {
   .introduction__heading {
     width: 80%;
   }
+
+  .introduction__heading strong{
+    font-size: 2rem;
+  }
 }
 
 @media(max-width:620px) {
   .main__text {
     width: 85%;
+  }
+
+  .main__text h1{
+    font-size: 2rem;
   }
 
   .skills__skills-heading h2 {
@@ -701,5 +709,17 @@ body {
 
   #contact form {
     width: 90%;
+  }
+
+  @media(max-width:530px) {
+
+    .introduction__heading strong{
+      font-size: 1.5rem;
+    }
+
+    .skills__skills-heading h2 {
+      font-size: 2rem;
+    }
+    
   }
 }
