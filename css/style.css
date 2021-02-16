@@ -664,10 +664,6 @@ body {
 }
 
 @media(max-width:900px) {
-  .introduction__video iframe {
-    width: 30em;
-    height: 10em;
-  }
 
   .services__box-container {
     grid-template-rows: auto;
@@ -690,9 +686,13 @@ body {
   }
 }
 
-@media(max-width:600px) {
+@media(max-width:620px) {
   .main__text {
     width: 85%;
+  }
+
+  .skills__skills-heading h2 {
+    font-size: 2.2rem;
   }
 
   .skills__skill-img {
