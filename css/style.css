@@ -524,7 +524,7 @@ body {
   }
 
   .navigation .navigation__menu{
-    display: block;
+    display: none;
     position: absolute;
     top: 65px;
     left: 0px;
@@ -607,3 +607,12 @@ body {
     top: 0em;
   }
 
+  nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0em;
+  }
+
+  nav .menu-btn:checked ~ .navigation__menu {
+    display: block;
+    /* 1'06'12 */
+  }
