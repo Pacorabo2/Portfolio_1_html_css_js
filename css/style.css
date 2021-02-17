@@ -334,7 +334,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  /* border: 1px solid #ffffff; */
 }
 
 .services__box-container__service-box {
@@ -342,18 +341,16 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0 1.2em 1.2em 1.2em;
-  /* border: 1px solid #ffffff; */
+  
 }
 
-.services__box-container__service-box img {
-  width: 2em;
-  height: 2em;
-  /* font-size: 2.5rem; */
-  background: linear-gradient(90deg, #2788e2, 20%, #3b67b8);
-  margin-bottom: 0.8em;
+.services__box-container__service-box i {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #2788e2 20%, #3b67b8);
+  margin-bottom: 0.5em;
   margin-right: auto;
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .services__box-container__service-box p {
