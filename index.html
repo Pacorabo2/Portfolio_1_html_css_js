@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="app.js"></script>
   <title>Nicolas PLAZA Portfolio</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -23,7 +24,7 @@
   <!-- -----------------Navigation Bar----------- -->
   <nav class="navigation">
     <!-- logo -->
-    <a href="#" class="navigation__logo" >
+    <a href="#main" class="navigation__logo" >
       <img src="./images/Logo_portfolio_blanc.png" alt="logo nicolas plaza Portfolio">
     </a>
     <!-- menu-btn -->
@@ -33,15 +34,15 @@
     </label>
     <!-- menu -->
     <ul class="navigation__menu">
-      <li class="navigation__menu__li"><a href="#main"></a>Accueil</li>
-      <li class="navigation__menu__li"><a href="#skills"></a>Projets</li>
-      <li class="navigation__menu__li"><a href="#introduction"></a>Introduction</li>
-      <li class="navigation__menu__li"><a href="#services"></a>Services</li>
-      <li class="navigation__menu__li"><a href="#contact"></a>Contact</li>
+      <li class="navigation__menu__li"><a href="#main">Accueil</a></li>
+      <li class="navigation__menu__li"><a href="#skills">Mes Compétences</a></li>
+      <li class="navigation__menu__li"><a href="#introduction">Introduction</a></li>
+      <li class="navigation__menu__li"><a href="#services">Skills</a></li>
+      <li class="navigation__menu__li"><a href="#contact">Contact</a></li>
     </ul>
     <!-- Hire-me btn -->
     <a href="#" class="navigation__hireMe">
-      Mes réalisations !
+      Mes réalisations
       <!-- put some icon to hire-me -->
       <i class="fas fa-chevron-right"></i>
     </a>
@@ -170,7 +171,15 @@
     </div>
     <!-- ----------place your self introduction video here------- -->
     <div class="introduction__video">
-      <iframe src="https://youtube.com/embed/Lew_mi91Ye4&ab_channel=PHSPlanèteHandisport" frameborder="0"></iframe>
+      <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/xa8_85RTb1U" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+      >
+    </iframe>
     </div>
   </section>
 
@@ -247,11 +256,11 @@
     <!-- footer-social-links -->
     <div class="footer-social">
       <!-- linkedin -->
-      <a href="#">
+      <a href="https://www.linkedin.com/in/plaza-nicolas-7a44bb86/" onclick="window.open(this.href); return false;">
         <img src="./images/linkedin.png" alt="linkedin Nicolas PLAZA link">
       </a>
       <!-- Github -->
-      <a href="#">
+      <a href="https://github.com/Pacorabo2" onclick="window.open(this.href); return false;">
         <img src="./images/github.png" alt="Github Nicolas PLAZA link">
       </a>
     </div>
