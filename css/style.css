@@ -261,6 +261,51 @@ body {
   letter-spacing: 1px;
 }
 
+/* -----------Introduction---------- */
+
+#introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+  position: relative;
+  text-align: center;
+  max-width: 80%;
+  border-top: 1px solid #292b32;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #292b32;
+  margin: 0.5em auto;
+  background-image: url(../images/bg.png);
+  background-size: 59em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.introduction__heading {
+  width: 60%;
+}
+
+.introduction__heading strong {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.introduction__heading p {
+  margin-top: 0.5em;
+  color: #8a94a763;
+}
+
+.introduction__video {
+  margin-top: 2.5em;
+}
+
+.introduction__video iframe {
+  width: 712px;
+  height: 400px;
+}
+
 
 
 
