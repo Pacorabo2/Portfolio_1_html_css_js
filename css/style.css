@@ -345,9 +345,10 @@ body {
 }
 
 .services__box-container__service-box i {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   background: linear-gradient(90deg, #2788e2 20%, #3b67b8);
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
+  margin-top: 0.8em;
   margin-right: auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -356,6 +357,7 @@ body {
 .services__box-container__service-box p {
   color: #8a94a783;
   font-size: 0.95rem;
+  margin-top: 0.8em;
 }
 
 .services__box-container__service-box strong {
