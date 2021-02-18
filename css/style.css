@@ -140,12 +140,12 @@ body {
 
 /* --------- Picture model ------*/
 .main__model {
-  width: 31em;
-  height: 31em;
+  width: 60em;
+  /* height: 40em; */
   position: absolute;
   top: 50%;
   right: 7%;
-  transform: translate(-7%, -50%);
+  transform: translate(12%, -57%);
 }
 
 .main__model img {
