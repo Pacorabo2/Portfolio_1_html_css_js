@@ -229,10 +229,32 @@ body {
   font-size: 1.5rem;
 }
 
-.fa-html5 {
+/* --------Generic class Icon size--------- */
+.fab {
   font-size: 2em;
-  color: #E96228;
 }
+
+/* --------------Specific class Icon color------- */
+.fa-html5 {
+  color: #E55F2A;
+}
+
+.fa-css3-alt {
+  color: #1A6FB4;
+}
+
+.fa-js {
+  color: #E6B101;
+}
+
+.fa-node-js {
+  color: #85bd32;
+}
+
+.fa-react {
+  color: #50BBD7;
+}
+
 
 .skills__s-box-container__skill-box__s-box-text strong {
   color: #ffffff;
