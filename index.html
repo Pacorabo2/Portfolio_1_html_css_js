@@ -245,7 +245,7 @@
   <!-- contact --->
   <section id="contact">
     <!-- form -->
-    <form  class="contact-form">
+    <form  method="POST" class="contact-form">
       <!-- full name -->
       <input type="text" class="name" placeholder="Nom" required>
       <!-- email -->
@@ -255,6 +255,8 @@
       <!-- send Btn -->
       <input type="submit" value="Envoyer">
     </form>
+
+    <div class="infosResults"></div>
   </section>
   
   <!-- footer -->
@@ -275,7 +277,7 @@
   </footer>
 
   <!-- Connect to SmtpJs.com -->
-  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <!-- Connect to Firebase -->
   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
   <script src="./app.js"></script>
