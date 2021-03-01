@@ -29,6 +29,9 @@ function submitForm(e) {
 
   // Save values input form
   saveContactInfo(name, email, message);
+
+  // Emptying input
+  document.querySelector(".contact-form").reset()
 }
 
 function saveContactInfo(name, email, message) {
