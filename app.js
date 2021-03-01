@@ -43,9 +43,7 @@ function saveContactInfo(name, email, message) {
 function sendEmail(name, email, message) {
   console.log("Depuis la fonction sendEmail");
   Email.send({
-    Host: "smtp.gmail.com",
-    Username: 'contact.nicolas.plaza@gmail.com',
-    Password: "iomqgtfdhpmfxpkj",
+    SecureToken: "43a0bcc1-e8a0-466e-bcfc-0a1423c91901",
     To: 'contact.nicolas.plaza@gmail.com',
     From: `${email}`,
     Subject: `${name} vous a envoyé un message` ,
