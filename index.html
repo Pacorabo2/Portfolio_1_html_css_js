@@ -21,7 +21,12 @@
   <!-- import roboto mono font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+    emailjs.init("user_Fkc6IqGP2vYUE1PZUy4Fs");
+    })();
+  </script>
 </head>
 <body>
   <!-- -----------------Navigation Bar----------- -->
@@ -240,14 +245,13 @@
   <!-- contact --->
   <section id="contact">
     <!-- form -->
-    <form>
+    <form method="POST" class="contact-form">
       <!-- full name -->
       <input type="text" id="toName" name="nom" placeholder="Nom" required>
       <!-- email -->
       <input type="text" id="fromName" name="email" placeholder="exemple@gmail.com" required>
       <!-- write something -->
-      <input type="text" id="msg"name="email" placeholder="exemple@gmail.com" required>
-      <textarea name="message" id="toName" placeholder="Ecrivez votre message..." cols="30" rows="10" required></textarea>
+      <textarea name="message" id="msg" placeholder="Ecrivez votre message..." cols="30" rows="10" required></textarea>
       <!-- send Btn -->
       <input type="submit" value="Envoyer">
     </form>
@@ -269,5 +273,10 @@
       </a>
     </div>
   </footer>
+
+  <!-- Connect to SmtpJs.com -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- Connect to Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
 </body>
 </html>
