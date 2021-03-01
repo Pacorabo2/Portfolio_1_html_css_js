@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./app.js"></script>
+  <!-- <script src="./app.js"></script> -->
   <title>Nicolas PLAZA Portfolio</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -245,13 +245,13 @@
   <!-- contact --->
   <section id="contact">
     <!-- form -->
-    <form method="POST" class="contact-form">
+    <form  class="contact-form">
       <!-- full name -->
-      <input type="text" id="toName" name="nom" placeholder="Nom" required>
+      <input type="text" class="name" placeholder="Nom" required>
       <!-- email -->
-      <input type="text" id="fromName" name="email" placeholder="exemple@gmail.com" required>
+      <input type="text" class="email" placeholder="exemple@gmail.com" required>
       <!-- write something -->
-      <textarea name="message" id="msg" placeholder="Ecrivez votre message..." cols="30" rows="10" required></textarea>
+      <textarea class="message" placeholder="Ecrivez votre message..." cols="30" rows="10" required></textarea>
       <!-- send Btn -->
       <input type="submit" value="Envoyer">
     </form>
@@ -275,8 +275,10 @@
   </footer>
 
   <!-- Connect to SmtpJs.com -->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
   <!-- Connect to Firebase -->
   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+  <script src="./app.js"></script>
+  
 </body>
 </html>
