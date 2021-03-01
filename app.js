@@ -19,64 +19,25 @@ document.querySelector(".contact-form").addEventListener("submit", submitForm);
 function submitForm(e) {
   e.preventDefault();
   console.log("Je suis dans la fonction submitForm");
-
   // Get input Values
   let name = document.querySelector(".name").value;
   let email = document.querySelector(".email").value;
   let message = document.querySelector(".message").value;
-
-  // console.log(name, email, message);
-
   // Save values input form
   saveContactInfo(name, email, message);
-
   // Emptying input
   document.querySelector(".contact-form").reset();
-
   sendEmail(name, email, message);
 }
 
 function saveContactInfo(name, email, message) {
   let newContactInfo = contactInfo.push();
-
   newContactInfo.set({
     name: name,
     email: email,
     message: message,
   });
-
-  // retrieveInfos();
 }
-
-// Retrieve Infos
-// function retrieveInfos() {
-//   let ref = firebase.database().ref("infos");
-//   ref.on("value", gotData);
-// }
-
-
-// function gotData(data) {
-//   let info = data.val();
-//   let keys = Object.keys(info);
-
-//   for (let i = 0; i < keys.length; i++) {
-//     let infoData = keys[i];
-//     let name = info[infoData].name;
-//     let email = info[infoData].email;
-//     let message = info[infoData].message;
-//     console.log(name, email, message);
-
-//     let infosResults = document.querySelector(".infosResults");
-
-//     infosResults.innerHTML += `<div>
-//     <p><strong>Name: </strong>${name} <br>
-//     <a><strong>Email: </strong>${email}</a> <br>
-//     <a><strong>Message: </strong>${message}</a> <br>
-//     </div>`;
-//   }
-// }
-
-// retrieveInfos();
 
 // Send Email Info
 function sendEmail(name, email, message) {
