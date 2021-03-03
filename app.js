@@ -16,6 +16,18 @@ let contactInfo = firebase.database().ref("infos");
 // Listen for a submit and fire submitForm function
 document.querySelector(".contact-form").addEventListener("submit", submitForm);
 
+// Listener on #redirect, on click 
+document.querySelector('#redirect').addEventListener('click', () => {
+  // confirm('En cliquant sur ce lien, vous acceptez la lecture de son contenu dans une autre page');
+  // window.open(
+  //   "https://youtu.be/B-olvh8Y2_Q?t=3245",
+  //   "Mon projet vidéo",
+  //    )
+  if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
+    window.open("https://youtu.be/B-olvh8Y2_Q?t=3245", "Nouvelle fenêtre")
+  }
+});
+
 function submitForm(e) {
   e.preventDefault();
   console.log("Je suis dans la fonction submitForm");
@@ -50,6 +62,8 @@ function sendEmail(name, email, message) {
     Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`, 
   }).then((message) => alert("le message a bien été envoyé"));
 }
+
+
 
 
 
