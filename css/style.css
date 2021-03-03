@@ -48,7 +48,7 @@ body {
   cursor: pointer;
   color: aquamarine;
   transition: all ease 0.5s;
-  
+
 }
 
 .navigation__hireMe {
@@ -371,7 +371,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0 1.2em 1.2em 1.2em;
-  
+
 }
 
 .services__box-container__service-box i {
@@ -399,18 +399,163 @@ body {
 
 /*----------- myRealisations ------------*/
 #myRealisations {
-  width: 80%;
-  display: flex;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #eaeff1;
-  color: #0f8ce2;
+  margin-top: 8em;
+  margin-bottom: 8em;
 }
 
-.container {
-  background-color: #242830;
-  border: 4px solid red;
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  /* border: 1px solid red; */
 }
+
+.card {
+  /* border: 1px solid #2ae5a7; */
+  position: relative;
+  width: 20em;
+  height: 28.5em;
+  text-align: center;
+  box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
+              inset -5px -5px 15px rgba(255,255,255,0.1),
+              5px 5px 15px rgba(0,0,0,0.3),
+              -5px -5px 15px rgba(255,255,255,0.1);
+  border-radius: 15px;
+  margin: 1.8em;
+}
+
+/* Style avec mi-blanc mi-noir */
+/* .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px 0 0 15px;
+} */
+
+.card::before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  z-index: -1;
+}
+
+.card::after {
+  content: '';
+  border-radius: 15px;
+  position: absolute;
+  top: -0.5px;
+  left: -0.5px;
+  right: -0.5px;
+  bottom: -0.5px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(50px);
+}
+
+.card:nth-child(even):before,
+.card:nth-child(even)::after
+{
+  background: linear-gradient(235deg, #89ff00,#010615,#00bcd4);
+}
+
+.card:nth-child(odd):before,
+.card:nth-child(odd)::after
+{
+  background: linear-gradient(-235deg, #00bcd4,#010615,#89ff00);
+}
+
+.card__bgd {
+  /* border: 1px solid #E6B101; */
+  position:absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  transition: 0.5%;
+  padding: 0.8em;
+  overflow: hidden;
+}
+
+.card__bgd:hover {
+  transform: translateY(-30px);
+  box-shadow: 0 40px 70px rgba(0,0,0,0.5);
+  transition: ease-in-out;
+}
+
+.card img {
+  width: 90%;
+  border-radius: 15px;
+}
+
+.card__details {
+  /* border: 1px solid lightpink; */
+  margin: 1.2em 0;
+}
+
+.card__details__tag {
+  padding:0.3em 0.5em;
+  border: 1px solid #e5eaed;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card__name {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-top: 0.6em;
+}
+
+.card__description {
+  font-size: 0.8rem;
+  color: #fff;
+  margin-top: 0.8em;
+  line-height: 150%;
+}
+
+.card__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8em;
+}
+
+.card__btn__btn {
+  width: 8em;
+  background: linear-gradient(90deg, #2788e2, #3b58b8);
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding:0.3em;
+  color: #fff;
+}
+
+.fa-github {
+  margin-top: 0.2em;
+  color: #5C6BC0;
+  font-size: 2.5rem;
+}
+
+.fa-github:hover {
+  background-color: #fff;
+  border-radius: 50%;
+  /* transition: all ease 0.5s; */
+}
+
+
 
 /* ---------- get in touch ----------- */
 #get-in-touch {
@@ -441,7 +586,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #2788e2 20%, #3b4eb8 )
+  background: linear-gradient(2deg, #2788e2 20%, #3b4eb8 )
 }
 
 /* --------------contact form------------- */
@@ -632,7 +777,7 @@ body {
     transition: all ease-out 0.2s;
     width: 100%;
   }
-  
+
   nav .menu-icon .nav-icon:before {
     top: 0.3em;
   }
@@ -640,7 +785,7 @@ body {
   nav .menu-icon .nav-icon:after {
     top: -0.3em;
   }
-  
+
   nav .menu-icon .nav-icon,
   nav .menu-icon:checked ~ .menu-icon .nav-icon {
     background-color: transparent;
@@ -778,6 +923,6 @@ body {
       width: 12em;
       margin: 0.8em 0;
     }
-    
+
   }
 }
