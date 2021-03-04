@@ -492,13 +492,13 @@ body {
 .card:nth-child(even):before,
 .card:nth-child(even)::after
 {
-  background: linear-gradient(235deg, #89ff00,#010615,#00bcd4);
+  background: linear-gradient(235deg, #03A6A6,#010615,#04D9D9);
 }
 
 .card:nth-child(odd):before,
 .card:nth-child(odd)::after
 {
-  background: linear-gradient(-235deg, #00bcd4,#010615,#89ff00);
+  background: linear-gradient(-235deg, #04D9D9,#010615,#03A6A6  );
 }
 
 .card__bgd {
@@ -508,7 +508,7 @@ body {
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background: rgba(0,0,0,0.3);
+  background: rgba(20,38,38,0.6);
   border-radius: 15px;
   box-shadow: 0 20px 50px rgba(0,0,0,0.5);
   transition: 0.5%;
@@ -517,7 +517,7 @@ body {
 }
 
 .card__bgd:hover {
-  transform: translateY(-30px);
+  transform: translateY(-28px);
   box-shadow: 0 40px 70px rgba(0,0,0,0.5);
   transition: ease-in-out;
 }
@@ -534,7 +534,7 @@ body {
 
 .card__details__tag {
   padding:0.3em 0.5em;
-  border: 1px solid #e5eaed;
+  border: 1px solid #F29985;
   border-radius: 50px;
   font-size: 0.8rem;
   font-weight: 600;
@@ -543,7 +543,7 @@ body {
 
 .card__name {
   font-size: 1.8rem;
-  color: #fff;
+  color: #BF7D65 ;
   margin-top: 0.6em;
 }
 
