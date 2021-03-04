@@ -151,7 +151,8 @@ body {
 }
 
 .main__btns__download-cv-btn {
-  background: linear-gradient(90deg, #2788e2 20%, #3b58b8);
+  /* background: linear-gradient(90deg, #2788e2 20%, #3b58b8); */
+  background: linear-gradient(90deg, #04D9D9, #03A6A6);
   margin-right: 1.5em;
   text-align: center;
 }
@@ -161,7 +162,8 @@ body {
 }
 
 .main__btns__hireMe-btn:hover {
-  background-color: #0f8ce2;
+  background-color: #F29985;
+  color: #242830;
   transition: all ease 0.3s;
 }
 
@@ -216,7 +218,7 @@ body {
 }
 
 .skills__skills-heading span {
-  color: #416cdf;
+  color: #04D9D9;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -324,10 +326,12 @@ body {
   z-index: 3;
   position: relative;
   text-align: center;
-  max-width: 80%;
-  border-top: 1px solid #292b32;
+  max-width: 90%;
+  /* border-top: 1px solid #292b32; */
+  border-top: 1px solid #BF7D65;
   padding: 0.5em 0;
-  border-bottom: 1px solid #292b32;
+  /* border-bottom: 1px solid #292b32; */
+  border-bottom: 1px solid #BF7D65;
   margin: 0.5em auto;
   background-image: url(../images/bg.png);
   background-size: 59em;
@@ -362,12 +366,16 @@ body {
 /* ---------- Services ----------- */
 
 #services {
+  max-width: 90%;
+  margin: 0 auto;;
   display:flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   z-index: 3;
   position: relative;
+  border-bottom: 1px solid #BF7D65;
+  padding-bottom: 3.5em;
 }
 
 .services__heading {
@@ -399,7 +407,8 @@ body {
 
 .services__box-container__service-box i {
   font-size: 2.2rem;
-  background: linear-gradient(90deg, #2788e2 20%, #3b67b8);
+  /* background: linear-gradient(90deg, #2788e2 20%, #3b67b8); */
+  background: linear-gradient(90deg, #04D9D9, #03A6A6);
   margin-bottom: 0.3em;
   margin-top: 0.8em;
   margin-right: auto;
@@ -431,8 +440,10 @@ body {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8em;
-  margin-bottom: 8em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  border-bottom: 1px solid #BF7D65;
+  padding-bottom: 6em;
 }
 
 #container {
@@ -616,7 +627,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(2deg, #2788e2 20%, #3b4eb8 )
+  /* background: linear-gradient(2deg, #2788e2 20%, #3b4eb8 ) */
+  background: linear-gradient(90deg, #04D9D9, #03A6A6);
+  font-weight: bold;
 }
 
 /* --------------contact form------------- */
@@ -655,12 +668,16 @@ body {
 
 #contact form input[type="submit"] {
   height: 2.8em;
-  background: linear-gradient(90deg, #2065cc 20%, #3b58b8);
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* background: linear-gradient(90deg, #2065cc 20%, #3b58b8); */
+  background: linear-gradient(90deg, #04D9D9, #03A6A6);
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .footer {
+  max-width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -668,7 +685,9 @@ body {
   background-color: #14151610;
   padding: 0.8em;
   margin-top: 3em;
-  border-top: 1px solid #272729;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #BF7D65;
 }
 
 .footer-social {
