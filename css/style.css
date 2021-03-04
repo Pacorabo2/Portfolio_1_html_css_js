@@ -543,6 +543,7 @@ body {
 
 .card__name {
   font-size: 1.8rem;
+  font-weight: bold;
   color: #BF7D65 ;
   margin-top: 0.6em;
 }
@@ -564,7 +565,7 @@ body {
 
 .card__btn__btn {
   width: 8em;
-  background: linear-gradient(90deg, #2788e2, #3b58b8);
+  background: linear-gradient(90deg, #04D9D9, #03A6A6);
   border-radius: 15px;
   font-size: 0.9rem;
   font-weight: 600;
