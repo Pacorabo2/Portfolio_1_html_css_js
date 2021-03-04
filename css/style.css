@@ -90,14 +90,38 @@ body {
   width: 33em;
 }
 
-.main__text h1 {
+.main__text__title {
   color: #ffffff;
   font-size: 2.5rem;
   font-weight: 600;
   text-shadow: 2px 2px 30px rgba(0,0,0,0.01);
   margin: 0%;
   line-height: 2.5rem;
+  /* --- parameters to typeWriter*/
+  width: 600px;
+  height: 2em;
+  text-align: start;
+  border-right: 2px solid;
+  white-space:initial ;
+  overflow: hidden;
+  animation: ecriture 3s steps(30), animate .4s step-end infinite alternate;
 }
+
+@keyframes ecriture {
+  from 
+  {
+    width: 0;
+  }
+}
+
+@keyframes animate {
+  20% 
+  {
+    border-color: transparent;
+  }
+}
+
+/* --------- end of animation -------------*/
 
 .main__text p {
   color: #8a94a7c0;
