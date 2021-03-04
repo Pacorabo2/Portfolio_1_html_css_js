@@ -389,6 +389,12 @@ body {
   margin-top: 0.8em;
 }
 
+.services__box-container__service-box li {
+  color: #8a94a783;
+  font-size: 0.95rem;
+  margin-top: 0.8em;
+}
+
 .services__box-container__service-box strong {
   font-size: 1.2rem;
   font-weight: 400;
