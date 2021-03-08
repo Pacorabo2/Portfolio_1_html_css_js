@@ -1212,4 +1212,42 @@ body {
     }
 
   }
+
+  @media(max-width:354px) {
+    #skills {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-top: 1em;
+    }
+
+    .skills__skills-text-section {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .main__text {
+      width: 100%;
+      order: 2;
+      margin-top: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .main__text__title {
+      border: 1px solid #BF7D65;
+      width: 100%;
+      font-size: 1rem;
+      /* --- parameters to typeWriter*/
+      height: 4.5em;
+      text-align: center;
+      border-right: 2px solid;
+      animation: ecriture 4s steps(30), animate .7s step-start infinite alternate;
+    }
+
+  }
 }
