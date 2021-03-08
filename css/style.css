@@ -103,7 +103,6 @@ body {
   /* --- parameters to typeWriter*/
   width: 640px;
   height: 2em;
-  text-align: start;
   border-right: 2px solid;
   white-space:initial ;
   overflow: hidden;
@@ -308,10 +307,8 @@ body {
   position: relative;
   text-align: center;
   max-width: 90%;
-  /* border-top: 1px solid #292b32; */
   border-top: 1px solid #BF7D65;
   padding: 0.5em 0;
-  /* border-bottom: 1px solid #292b32; */
   border-bottom: 1px solid #BF7D65;
   margin: 0.5em auto;
   background-image: url(../images/bg.png);
@@ -836,7 +833,6 @@ body {
   .navigation__menu::before {
     position: absolute;
     left: 0;
-    /* top: -3.8em; */
     content: '';
     background-color: #111111;
   }
@@ -849,20 +845,71 @@ body {
   }
 
   .main__text {
-    /* position: static; */
-    /* order: 2; */
+    width: 640px;
+    
+    order: 2;
+    margin-top: 1em;
+  }
+
+  .main__text__title {
+    border: 1px solid #BF7D65;
+    font-size: 1.5rem;
+    /* --- parameters to typeWriter*/
+    width: 640px;
+    height: 2em;
+    text-align: center;
+    border-right: 2px solid;
+    /* white-space:initial ; */
+    overflow: hidden;
+    animation: ecriture 4s steps(30), animate .7s step-start infinite alternate;
+  }
+
+  @keyframes ecriture {
+    from 
+    {
+      width: 0;
+    }
+  }
+  
+  @keyframes animate {
+    20% 
+    {
+      border-color: transparent;
+    }
+  }
+  
+  /* --------- end of animation -------------*/
+
+  .main__text p {
+    font-size: 0.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 540px;
+    padding: 0.5em 0;
+    border: 1px solid #E6B101;
+    /* text-align: center; */
+  }
+
+  .main__btns {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    width: 540px;
+    display: flex;
+    border: 1px solid #F29985;
+    justify-content: center;
   }
 
   .main__model {
-    /* position: static; */
     order: 1;
+    border: 1px solid #85bd32;
+    margin-top: 1em;
   }
 
   #skills {
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    /* padding-left: 2.8em; */
   }
 
   .skills__skills-text-section {
@@ -876,8 +923,6 @@ body {
   }
 
   .skills__skill-img img {
-    /* object-fit: cover;
-    object-position: left; */
     height: 100%;
     width: 100%;
   }
