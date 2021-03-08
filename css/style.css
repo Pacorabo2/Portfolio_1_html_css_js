@@ -259,7 +259,7 @@ body {
 }
 
 
-.skills__s-box-container__skill-box__s-box-text strong {
+.skills__s-box-container__skill-box__s-box-text h3 {
   color: #ffffff;
   font-weight: 400;
   font-size: 0.9rem;
@@ -269,6 +269,7 @@ body {
   color: #8a94a783;
   font-size: 0.9rem;
   margin: 0.5em 0 0 0;
+  border: 1px solid #E55F2A;
 }
 
 /* ----------Skills Img container*/
@@ -309,7 +310,6 @@ body {
   padding: 0.5em 0;
   border-bottom: 1px solid #BF7D65;
   margin: 0.5em auto;
-  background-image: url(../images/bg.png);
   background-size: 59em;
   background-repeat: no-repeat;
   background-position: center;
@@ -319,7 +319,8 @@ body {
   width: 60%;
 }
 
-.introduction__heading strong {
+.introduction__heading h2 {
+  margin: 0 0 0.8em 0;
   color: #ffffff;
   font-size: 2.5rem;
   font-weight: 600;
@@ -331,7 +332,7 @@ body {
 }
 
 .introduction__video {
-  margin-top: 2.5em;
+  margin-top: 4.5em;
 }
 
 .introduction__video iframe {
@@ -396,12 +397,14 @@ body {
   color: #8a94a783;
   font-size: 0.95rem;
   margin-top: 0.8em;
+  line-height: 1.4rem;
 }
 
 .services__box-container__service-box li {
   color: #8a94a783;
   font-size: 0.95rem;
   margin-top: 0.8em;
+  line-height: 1.2rem;
 }
 
 .services__box-container__service-box strong {
@@ -427,11 +430,9 @@ body {
   flex-direction: row;
   justify-content: space-around;
   flex-flow: wrap;
-  /* border: 1px solid red; */
 }
 
 .card {
-  /* border: 1px solid #2ae5a7; */
   position: relative;
   width: 20em;
   height: 28.5em;
@@ -477,7 +478,6 @@ body {
 }
 
 .card__bgd {
-  /* border: 1px solid #E6B101; */
   position:absolute;
   top: 20px;
   left: 20px;
@@ -503,7 +503,6 @@ body {
 }
 
 .card__details {
-  /* border: 1px solid lightpink; */
   margin: 1.2em 0;
 }
 
@@ -557,7 +556,6 @@ body {
 .fa-github:hover {
   background-color: #fff;
   border-radius: 50%;
-  /* transition: all ease 0.5s; */
 }
 
 /* ---------- get in touch ----------- */
@@ -589,7 +587,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: linear-gradient(2deg, #2788e2 20%, #3b4eb8 ) */
   background: linear-gradient(90deg, #04D9D9, #03A6A6);
   font-weight: bold;
 }
@@ -701,6 +698,25 @@ body {
   .navigation__hireMe {
     margin-right: 10em;
   }
+
+  .skills__skills-heading h2{
+    margin-top: 0.5em;
+  }
+
+  .main__text__title {
+    margin-bottom: 0.8em;
+  }
+
+  .main__text p {
+    line-height: 1.4rem;
+  }
+
+  .introduction__heading p {
+    line-height: 1.4rem;
+    text-align:left ;
+  }
+
+
 }
 
 @media(max-width:1350px) {
@@ -714,9 +730,6 @@ body {
     margin-right: auto;
   }
 
-  .main__model{
-    /* border: 1px solid lightpink; */
-  }
 }
 @media(max-width:1200px) {
 
@@ -1266,7 +1279,6 @@ body {
     }
   
     .main__text__title {
-      border: 1px solid #BF7D65;
       width: 100%;
       font-size: 1rem;
       /* --- parameters to typeWriter*/
