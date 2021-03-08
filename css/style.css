@@ -56,6 +56,7 @@ body {
 
 .navigation__hireMe {
   color: aquamarine;
+  /* margin-right: 10em; */
 }
 
 .navigation__hireMe:hover {
@@ -697,6 +698,10 @@ body {
 /* ***********-----------  Responsive ------------*************/
 
 @media(max-width:1350px) {
+
+  .navigation__hireMe {
+    margin-right: 10em;
+  }
   #main {
     width: 90%;
     margin-left: auto;
@@ -1004,6 +1009,11 @@ body {
 }
 
 @media(max-width:700px) {
+
+  .navigation__hireMe {
+    margin-right: 7em;
+  }
+
   .main__text {
     width: 90%;
     order: 2;
@@ -1078,6 +1088,12 @@ body {
   }
 
   @media(max-width:585px) {
+
+    .navigation__hireMe {
+      margin-right: 4em;
+      font-size: 0.9rem;
+    }
+
     .main__text {
       width: 92%;
       order: 2;
@@ -1142,6 +1158,11 @@ body {
   }
 
   @media(max-width:530px) {
+
+    .navigation__hireMe {
+      margin-right: 3.5em;
+      font-size: 0.7rem;
+    }
 
     #skills {
       display: flex;
