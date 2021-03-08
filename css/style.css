@@ -74,7 +74,6 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 10em auto 0em auto;
-  border: 1px solid red;
 }
 
 #main::before {
@@ -161,7 +160,6 @@ body {
 }
 
 .main__btns__hireMe-btn:hover {
-  background-color: #F29985;
   color: #242830;
   transition: all ease 0.3s;
 }
@@ -850,7 +848,6 @@ body {
   }
 
   .main__text__title {
-    border: 1px solid #BF7D65;
     font-size: 1.5rem;
     /* --- parameters to typeWriter*/
     width: 640px;
@@ -884,8 +881,6 @@ body {
     margin-right: auto;
     width: 540px;
     padding: 0.5em 0;
-    border: 1px solid #E6B101;
-    /* text-align: center; */
   }
 
   .main__btns {
@@ -898,7 +893,6 @@ body {
 
   .main__model {
     order: 1;
-    border: 1px solid #85bd32;
     margin-top: 1em;
   }
 
@@ -944,7 +938,6 @@ body {
   }
 
   .main__text__title {
-    border: 1px solid #BF7D65;
     width: 100%;
     font-size: 1.2rem;
     /* --- parameters to typeWriter*/
@@ -976,8 +969,6 @@ body {
     margin-right: auto;
     width: 100%;
     padding: 0.5em 0;
-    border: 1px solid #E6B101;
-    /* text-align: center; */
   }
 
   .main__btns {
@@ -986,13 +977,11 @@ body {
     margin-top: 1em;
     width: 100%;
     display: flex;
-    border: 1px solid #F29985;
     justify-content: center;
   }
 
   .main__model {
     order: 1;
-    border: 1px solid #85bd32;
     margin-top: 1em;
   }
 
@@ -1026,7 +1015,6 @@ body {
   }
 
   .main__text__title {
-    border: 1px solid #BF7D65;
     width: 100%;
     font-size: 1rem;
     /* --- parameters to typeWriter*/
@@ -1058,8 +1046,6 @@ body {
     margin-right: auto;
     width: 100%;
     padding: 0.5em 0;
-    border: 1px solid #E6B101;
-    /* text-align: center; */
   }
 
   .main__btns {
@@ -1068,7 +1054,6 @@ body {
     margin-top: 1em;
     width: 100%;
     display: flex;
-    border: 1px solid #F29985;
     justify-content: center;
   }
 }
@@ -1092,18 +1077,84 @@ body {
     width: 90%;
   }
 
-  @media(max-width:530px) {
-
-    .introduction__heading strong{
-      font-size: 1.5rem;
+  @media(max-width:585px) {
+    .main__text {
+      width: 92%;
+      order: 2;
+      margin-top: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .main__text__title {
+      width: 100%;
+      font-size: 1rem;
+      /* --- parameters to typeWriter*/
+      height: 2.5em;
+      text-align: center;
+      border-right: 2px solid;
+      animation: ecriture 4s steps(30), animate .7s step-start infinite alternate;
+    }
+  
+    @keyframes ecriture {
+      from 
+      {
+        width: 0;
+      }
+    }
+    
+    @keyframes animate {
+      20% 
+      {
+        border-color: transparent;
+      }
     }
 
     .skills__skills-heading h2 {
-      font-size: 2rem;
+      font-size: 2.2rem;
+    }
+  
+    .skills__skill-img {
+      width: 100%;
+    }
+    
+    /* --------- end of animation -------------*/
+  
+    .main__text p {
+      font-size: 0.8rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: 0.5em 0;
     }
 
-    .main {
+    .main__btns {
+      flex-direction: column;
+    }
 
+    .main__btns a {
+      width: 12em;
+      margin: 0.8em 0;
+    }
+
+  }
+
+  @media(max-width:530px) {
+
+    #skills {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-top: 1em;
+    }
+
+    .skills__skills-text-section {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
     }
 
     .main__text {
@@ -1117,7 +1168,6 @@ body {
     }
   
     .main__text__title {
-      border: 1px solid #BF7D65;
       width: 100%;
       font-size: 1rem;
       /* --- parameters to typeWriter*/
@@ -1149,18 +1199,7 @@ body {
       margin-right: auto;
       width: 100%;
       padding: 0.5em 0;
-      border: 1px solid #E6B101;
       /* text-align: center; */
-    }
-  
-    .main__btns {
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 1em;
-      width: 100%;
-      display: flex;
-      border: 1px solid #F29985;
-      justify-content: center;
     }
 
     .main__btns {
