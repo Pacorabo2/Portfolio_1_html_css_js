@@ -54,15 +54,14 @@ body {
 
 }
 
-.navigation__hireMe {
+/* .navigation__hireMe {
   color: aquamarine;
-  /* margin-right: 10em; */
 }
 
 .navigation__hireMe:hover {
   color: #1a82e2;
   transition: all ease 0.5s;
-}
+} */
 
 
 /* ------------main-------------- */
