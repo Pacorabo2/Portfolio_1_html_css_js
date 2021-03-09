@@ -413,6 +413,7 @@ body {
 }
 
 .services__box-container__service-box h3 {
+  text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 1px;
@@ -633,6 +634,7 @@ body {
 }
 
 .contactMe h4 {
+  text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 1px;
@@ -994,9 +996,27 @@ body {
 
 @media(max-width:900px) {
 
+  #contact p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .services__box-container {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
+  }
+
+  .contactMe i {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact__textParagraph {
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
