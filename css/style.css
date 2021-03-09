@@ -135,7 +135,6 @@ body {
 .main__btns {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   margin-top: 3.8em;
 }
 
@@ -318,7 +317,7 @@ body {
 }
 
 .introduction__heading {
-  width: 60%;
+  width: 80%;
 }
 
 .introduction__heading h2 {
@@ -329,8 +328,16 @@ body {
 }
 
 .introduction__heading p {
-  margin-top: 0.5em;
-  color: #8a94a763;
+  text-align: start;
+  margin-top: 0.8em;
+  color: #8a94a7c0;
+  line-height: 1.3rem;
+}
+
+.introduction__heading a {
+  color: #fff;
+  text-decoration: underline;
+  font-style: italic;
 }
 
 .introduction__video {
@@ -345,7 +352,7 @@ body {
 /* ---------- Services ----------- */
 
 #services {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;;
   display:flex;
   justify-content: center;
@@ -396,14 +403,14 @@ body {
 }
 
 .services__box-container__service-box p {
-  color: #8a94a783;
+  color: #8a94a7c0;
   font-size: 0.95rem;
   margin-top: 0.8em;
   line-height: 1.4rem;
 }
 
 .services__box-container__service-box li {
-  color: #8a94a783;
+  color: #8a94a7c0;
   font-size: 0.95rem;
   margin-top: 0.8em;
   line-height: 1.2rem;
@@ -631,7 +638,6 @@ body {
   height: 2.8em;
   font-size: 1.5rem;
   font-weight: bold;
-  /* background: linear-gradient(90deg, #2065cc 20%, #3b58b8); */
   background: linear-gradient(90deg, #04D9D9, #03A6A6);
   color: #ffffff;
   text-transform: uppercase;
