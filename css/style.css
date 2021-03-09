@@ -364,15 +364,12 @@ body {
   padding-bottom: 3.5em;
 }
 
-.services__heading {
+#services h2{
+  margin: 0 0 0.8em 0;
   color: #ffffff;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  width: 90%;
-  background-color: #141516;
-  padding: 0.8em;
-  display: flex;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .services__box-container {
@@ -432,6 +429,15 @@ body {
   margin-bottom: 4em;
   border-bottom: 1px solid #BF7D65;
   padding-bottom: 6em;
+}
+
+#myRealisations h2 {
+  margin: 0 0 0.8em 0;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 #container {
@@ -610,6 +616,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#contact h2{
+  margin: 0 0 0.8em 0;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 #contact form {
