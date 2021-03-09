@@ -581,6 +581,7 @@ body {
   background-position: top right;
   background-size: 400px;
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 #get-in-touch span {
@@ -598,6 +599,7 @@ body {
   align-items: center;
   background: linear-gradient(90deg, #04D9D9, #03A6A6);
   font-weight: bold;
+  border-radius: 10px;
 }
 
 /* --------------contact form------------- */
