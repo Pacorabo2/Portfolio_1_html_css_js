@@ -19,7 +19,7 @@ body {
   top: 0%;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 1em 2.5em;
   z-index: 4;
@@ -62,20 +62,9 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 10em auto 0em auto;
+  margin: 10em auto 2em auto;
 }
 
-/* #main::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  left: -20%;
-  top: -23%;
-  transform: rotate(-10deg);
-  background: linear-gradient(45deg, rgb(19,19,19) -10%, #141516);
-  z-index: -1;
-} */
 #main::before {
   content: '';
   position: absolute;
@@ -185,6 +174,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: auto auto 3em auto;
+  border-top: 1px solid #BF7D65;
 }
 
 #redirect {
@@ -358,7 +348,7 @@ body {
 /* ---------- Services ----------- */
 
 #services {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;;
   display:flex;
   justify-content: center;
@@ -454,7 +444,7 @@ body {
 
 .card {
   position: relative;
-  width: 20em;
+  width: 22em;
   height: 35em;
   text-align: center;
   box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
@@ -580,6 +570,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 0.8em;
+  padding-bottom: 0.8em;
 }
 
 .card__btn__btn {
@@ -841,7 +832,7 @@ body {
   }
 }
 
-@media(max-widt:1055px){
+@media(max-width:1055px){
   .navigation__menu li {
     font-size: 0.7rem;
   }
@@ -850,7 +841,7 @@ body {
 @media(max-width:1000px){
 
   .navigation{
-    width: 90vw;
+    width: 100vw;
     justify-content: space-between;
     height: 65px;
     padding: 60px 25px;
@@ -977,7 +968,6 @@ body {
     height: 2em;
     text-align: center;
     border-right: 2px solid;
-    /* white-space:initial ; */
     overflow: hidden;
     animation: ecriture 4s steps(30), animate .7s step-start infinite alternate;
   }
@@ -1016,13 +1006,13 @@ body {
 
   .main__model {
     order: 1;
-    margin-top: 1em;
   }
 
   #skills {
     width: 90%;
     flex-direction: column;
     justify-content: center;
+    margin-top: 2.5em;
   }
 
   .skills__skills-text-section {
