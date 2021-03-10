@@ -443,7 +443,7 @@ body {
   padding-bottom: 1em;
 }
 
-#container {
+.container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -496,7 +496,6 @@ body {
 }
 
 .card__bgd {
-  border: 1px solid red;
   position:absolute;
   display: flex;
   flex-wrap: wrap;
@@ -531,7 +530,7 @@ body {
   margin: 1.2em 0;
 }
 
-#tags {
+.tags {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -555,11 +554,16 @@ body {
 }
 
 .card__description {
+ margin-top: 0.2em;
+}
+
+.card__description p {
   font-size: 0.8rem;
   color: #fff;
   margin-top: 0.8em;
   line-height: 150%;
 }
+
 
 .card__btn {
   display: flex;
