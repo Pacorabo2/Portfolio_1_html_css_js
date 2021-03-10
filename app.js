@@ -18,25 +18,22 @@ document.querySelector(".contact-form").addEventListener("submit", submitForm);
 
 // Listener on #redirect, on click 
 document.querySelector('#redirect').addEventListener('click', () => {
-  // confirm('En cliquant sur ce lien, vous acceptez la lecture de son contenu dans une autre page');
-  // window.open(
-  //   "https://youtu.be/B-olvh8Y2_Q?t=3245",
-  //   "Mon projet vidéo",
-  //    )
   if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
     window.open("https://youtu.be/B-olvh8Y2_Q?t=3245", "Nouvelle fenêtre")
   }
 });
 
-// Listener on #redirect, on click 
+// Listener on #phsTeam, on click 
 document.querySelector('#phsTeam').addEventListener('click', () => {
-  // confirm('En cliquant sur ce lien, vous acceptez la lecture de son contenu dans une autre page');
-  // window.open(
-  //   "https://youtu.be/B-olvh8Y2_Q?t=3245",
-  //   "Mon projet vidéo",
-  //    )
   if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
     window.open("https://www.phs.team/", )
+  }
+});
+
+// Listener on #happyNews, on click 
+document.querySelector('#happyNews').addEventListener('click', () => {
+  if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
+    window.open("https://happy-news-np.netlify.app/")
   }
 });
 
