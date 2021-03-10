@@ -28,6 +28,18 @@ document.querySelector('#redirect').addEventListener('click', () => {
   }
 });
 
+// Listener on #redirect, on click 
+document.querySelector('#phsTeam').addEventListener('click', () => {
+  // confirm('En cliquant sur ce lien, vous acceptez la lecture de son contenu dans une autre page');
+  // window.open(
+  //   "https://youtu.be/B-olvh8Y2_Q?t=3245",
+  //   "Mon projet vidéo",
+  //    )
+  if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
+    window.open("https://www.phs.team/", )
+  }
+});
+
 function submitForm(e) {
   e.preventDefault();
   console.log("Je suis dans la fonction submitForm");

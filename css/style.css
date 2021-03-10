@@ -340,6 +340,10 @@ body {
   font-style: italic;
 }
 
+.introduction__heading a:hover {
+  cursor: pointer;
+}
+
 .introduction__video {
   margin-top: 4.5em;
 }
@@ -384,7 +388,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 1.2em 1.2em 1.2em;
-
 }
 
 .services__box-container__service-box i {
