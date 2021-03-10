@@ -37,6 +37,13 @@ document.querySelector('#happyNews').addEventListener('click', () => {
   }
 });
 
+// Listener on #happyNewsGit, on click 
+document.querySelector('#happyNewsGit').addEventListener('click', () => {
+  if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
+    window.open("https://github.com/O-clock-Lyra-JS/projet-happy-news")
+  }
+});
+
 function submitForm(e) {
   e.preventDefault();
   console.log("Je suis dans la fonction submitForm");
