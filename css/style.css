@@ -1343,7 +1343,7 @@ body {
       width: 100%;
       font-size: 1rem;
       /* --- parameters to typeWriter*/
-      height: 2.2em;
+      height: 4.3em;
       text-align: center;
       border-right: 2px solid;
       animation: ecriture 4s steps(30), animate .7s step-start infinite alternate;
