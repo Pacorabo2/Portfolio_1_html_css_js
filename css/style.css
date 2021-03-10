@@ -684,6 +684,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.form__title {
+  margin-top: 5em;
+}
+
 #contact form {
   width: 37.5em;
   display: flex;
