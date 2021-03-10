@@ -44,6 +44,13 @@ document.querySelector('#happyNewsGit').addEventListener('click', () => {
   }
 });
 
+// Listener on #phsTeam, on click 
+document.querySelector('#phsTeamCard').addEventListener('click', () => {
+  if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
+    window.open("https://www.phs.team/")
+  }
+});
+
 function submitForm(e) {
   e.preventDefault();
   console.log("Je suis dans la fonction submitForm");
