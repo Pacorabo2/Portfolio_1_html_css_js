@@ -21,7 +21,7 @@ document.querySelector('#redirect').addEventListener('click', () => {
   if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
     window.open("https://youtu.be/B-olvh8Y2_Q?t=3245", "Nouvelle fenêtre")
   }
-});
+}); 
 
 // Listener on #phsTeam, on click 
 document.querySelector('#phsTeam').addEventListener('click', () => {
