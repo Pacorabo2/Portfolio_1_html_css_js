@@ -498,7 +498,7 @@ body {
 .card__bgd {
   position:absolute;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: column;
   justify-content: space-between;
   top: 20px;
@@ -519,15 +519,21 @@ body {
   transition: ease-in-out;
 }
 
+.card__img {
+  height: 10em;
+}
+
 .card img {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
   border-radius: 15px;
 }
 
 .card__details {
-  margin: 1.2em 0;
+  margin: 0.5em 0;
 }
 
 .tags {

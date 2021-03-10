@@ -51,6 +51,20 @@ document.querySelector('#phsTeamCard').addEventListener('click', () => {
   }
 });
 
+// Listener on #chatSite, on click 
+document.querySelector('#chatSite').addEventListener('click', () => {
+  if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
+    window.open("https://react-chat-app-porfolio.netlify.app/")
+  }
+});
+
+// Listener on #chatGithub, on click 
+document.querySelector('#chatGithub').addEventListener('click', () => {
+  if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
+    window.open("https://github.com/Pacorabo2/React-chat-app-pn")
+  }
+});
+
 function submitForm(e) {
   e.preventDefault();
   console.log("Je suis dans la fonction submitForm");
