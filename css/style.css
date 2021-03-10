@@ -307,6 +307,8 @@ body {
 
 .introduction__heading {
   width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .introduction__heading h2 {
@@ -317,7 +319,8 @@ body {
 }
 
 .introduction__heading p {
-  text-align: start;
+  /* text-align: start; */
+  text-align: center;
   margin-top: 0.8em;
   color: #8a94a7c0;
   line-height: 1.3rem;
@@ -618,6 +621,7 @@ body {
   color: #8a94a7c0;
   font-size: 1rem;
   line-height: 1.5rem;
+  text-align: center;
 }
 
 #contact__textParagraph {
@@ -1208,10 +1212,9 @@ body {
   }
 
   @media(max-width:585px) {
-
-    .navigation__hireMe {
-      margin-right: 4em;
-      font-size: 0.9rem;
+    #main {
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .main__text {
@@ -1233,6 +1236,16 @@ body {
       border-right: 2px solid;
       animation: ecriture 4s steps(30), animate .7s step-start infinite alternate;
     }
+
+    .main__btns {
+      align-items: center;
+    }
+
+    .main__btns a {
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 0.5em 1em;
+    }
   
     @keyframes ecriture {
       from 
@@ -1246,14 +1259,6 @@ body {
       {
         border-color: transparent;
       }
-    }
-
-    .skills__skills-heading h2 {
-      font-size: 2.2rem;
-    }
-  
-    .skills__skill-img {
-      width: 100%;
     }
     
     /* --------- end of animation -------------*/
@@ -1275,6 +1280,31 @@ body {
       margin: 0.8em 0;
     }
 
+    #skills {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    .skills__skills-heading h2 {
+      font-size: 2.2rem;
+    }
+  
+    .skills__skill-img {
+      width: 100%;
+    }
+
+    #introduction {
+      width: 90vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #contact p{
+      margin-left: auto;
+      margin-right: auto;
+      jus
+    }
   }
 
   @media(max-width:530px) {
