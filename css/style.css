@@ -340,4 +340,223 @@ body {
 .introduction__video iframe {
   width: 712px;
   height: 400px;
+}
+
+/* ---------- Services ----------- */
+#services {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+  position: relative;
+  border-bottom: 1px solid #BF7D65;
+  padding-bottom: 3.5em;
+}
+
+#services h2 {
+  margin: 0 0 0.8em 0;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.services__box-container {
+  width: 90%;
+  margin-top: 2.2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+.services__box-container__service-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.2em 1.2em 1.2em;
+}
+.services__box-container__service-box i {
+  font-size: 2.2rem;
+  background: linear-gradient(90deg, #04D9D9, #03A6A6);
+  margin-bottom: 0.3em;
+  margin-top: 1.2em;
+  margin-right: auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.services__box-container__service-box p {
+  color: #8a94a7c0;
+  font-size: 0.95rem;
+  margin-top: 0.8em;
+  line-height: 1.4rem;
+}
+.services__box-container__service-box li {
+  color: #8a94a7c0;
+  margin-top: 0.8em;
+  line-height: 1.2rem;
+  font-size: 0.95rem;
+}
+.services__box-container__service-box h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #e4e4e4;
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+}
+
+/*----------- myRealisations ------------*/
+#myRealisations {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  border-bottom: 1px solid #BF7D65;
+  padding-bottom: 6em;
+}
+
+#myRealisations h2 {
+  margin: 0 0 0.8em 0;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  flex: initial;
+  position: relative;
+  height: 42rem;
+  width: 25rem;
+  perspective: 200rem;
+  margin: 2rem;
+}
+.card__side {
+  height: 32rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  /* We don't want to see the back part of the element. */
+  backface-visibility: hidden;
+  /* We don't want to see the back part of the element. */
+  border-radius: 20px 0;
+  overflow: hidden;
+  /* The image is overflowing the parent. */
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+}
+.card__side--front {
+  background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.7)), url(../images/daredevil.png);
+  background-repeat: no-repeat;
+}
+.card__side--back {
+  background-color: #fff;
+  transform: rotateY(180deg);
+}
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.card__theme {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 54%;
+  width: 90%;
+  text-align: center;
+}
+.card__theme-box {
+  color: #fff;
+  margin-bottom: 8rem;
+}
+.card__subject {
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 0.8rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.card__title {
+  font-family: "VT323", monospace;
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 100;
+}
+.card__cover {
+  position: relative;
+  background-size: cover;
+  height: 17rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+}
+.card__heading {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+.card__heading-span {
+  font-family: "VT323", monospace;
+  font-size: 4.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  color: #fff;
+}
+.card__details {
+  font-family: "Inconsolata", monospace;
+  color: #000;
+  padding: 2rem 2rem;
+}
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.card__details ul li {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.card__details--btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.card__details--btn p {
+  margin-left: auto;
+  margin-right: auto;
+}
+.card__details--btn a {
+  font-family: "Inconsolata", monospace;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 2.2rem;
+  background-color: #04D4D4;
+  text-decoration: none;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
