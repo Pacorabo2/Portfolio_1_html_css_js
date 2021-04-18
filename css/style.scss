@@ -554,19 +554,19 @@ body {
       color: $color-white;
       margin-bottom: 8rem;
      }
-
+     // Subject Front Card 
      &__subject {
       font-family: "Inconsolata", monospace;
       letter-spacing: 0.8rem;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       text-transform: uppercase;
-      margin-bottom: 1rem;
+      margin-bottom: 3rem;
     }
-
+    // Title Front Card 
     &__title {
       font-family: "VT323", monospace;
       text-transform: uppercase;
-      font-size: 6rem;
+      font-size: 4rem;
       font-weight: 100;
      }
 
@@ -574,7 +574,7 @@ body {
     &__cover {
       position: relative;
       background-size: cover;
-      height: 17rem;
+      height: 10rem;
       // background-blend-mode: screen;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -597,7 +597,7 @@ body {
 
     &__heading-span {
       font-family: "VT323", monospace;
-      font-size: 4.2rem;
+      font-size: 3.2rem;
       font-weight: 300;
       text-transform: uppercase;
       padding: 1rem 1.5rem;
@@ -607,7 +607,7 @@ body {
     &__details {
       font-family: "Inconsolata", monospace;
       color: $color-black;
-      padding: 2rem 2rem;
+      padding: 1rem 2rem;
       ul {
        list-style: none;
        width: 80%;
@@ -615,8 +615,8 @@ body {
     
        li {
         text-align: center;
-        font-size: 1.8rem;
-        padding: 1rem;
+        font-size: 1.2rem;
+        padding: 0.5rem;
     
         &:not(:last-child) {
          border-bottom: 1px solid $color-gray-light;
@@ -626,28 +626,218 @@ body {
 
     &--btn {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: flex-end;
+      margin-top: 1.5rem;
 
       p {
         margin-left: auto;
         margin-right: auto;
       }
 
-      a {
+      &__first {
         font-family: "Inconsolata", monospace;
-        padding: 5px 10px;
+        padding: 10px 10px;
         color: #fff;
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         background-color: #04D4D4;
         text-decoration: none;
         border-radius: 10px;
       }
+
+      &__last {
+        font-family: "Inconsolata", monospace;
+        padding: 10px 10px;
+        color: #fff;
+        font-size: 1.5rem;
+        background-color: $color-black;
+        text-decoration: none;
+        border-radius: 10px;
+      }
+
     }
    }
-
 }
-   
 
+/* --------------contact form------------- */
+
+#contact {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact h2{
+  margin: 0 0 1.5em 0;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#contact p {
+  color: #8a94a7c0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+#contact__textParagraph {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #e4e4e4;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#contact__textParagraph p {
+  color: #8a94a7c0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+#contact__textParagraph strong {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.contactMe {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h4 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #e4e4e4;
+    margin-bottom: 1em;
+  }
+
+  i {
+    width: 2.5em;
+    font-size: 2.2rem;
+    background: linear-gradient(90deg, #04D9D9, #03A6A6);
+    margin-bottom: 0.3em;
+    margin-top: 0.8em;
+    margin-right: 2em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.form__title {
+  margin-top: 5em;
+}
+
+#contact form {
+  width: 37.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+#contact form input, #contact form textarea {
+  width: 100%;
+  height: 3em;
+  margin: 0.3em 0;
+  padding: 0.7em;
+  border: none;
+  outline: none;
+  background-color: #373a412d;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+#contact form textarea {
+  height: 9em;
+}
+
+#contact form input[type="submit"] {
+  height: 2.8em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #04D9D9, #03A6A6);
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #14151610;
+  padding: 0.8em;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #BF7D65;
+}
+
+.footer-social {
+  display: flex;
+  margin-top: 0.4em;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social img {
+  height: 2.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 1.5em;
+}
+
+.footer-social img:hover {
+  background-color: #fff;
+  /* height: 3.1em; */
+  transition: all ease 0.5s;
+}
+
+::selection {
+  color: #e4e4e4;
+  background-color: #416cdf;
+}
+
+::selection {
+  color: #e4e4e4;
+  background-color: #416cdf;
+}
+
+/* Adjustements */
+#services,
+#introduction,
+#skills{
+  padding-top: 3.8em;
+}
+
+#introduction {
+  padding-bottom: 2.8em;
+}
+
+.menu-icon,
+.menu-btn {
+  display: none;
+}
 
 
