@@ -6,7 +6,11 @@ $color-black: #000;
 $color-gray-dark: #aaa;
 $color-gray-light: #eee;
 $color-white: #fff;
-$color-aquamarine: #7FFFD4;
+$color-aquamarine: #00A6A7;
+$color-aquamarine-light: #9cf8d9;
+
+
+
 
 // Mixins
 @mixin absCenter {
@@ -521,12 +525,35 @@ body {
     &--front {
       background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-dark, 0.65),
-        rgba($color-primary-light, 0.7)
+        rgba($color-aquamarine, 0.45),
+        rgba($color-aquamarine-light, 0.2)
        ),
        url(../images/daredevil.png);
        background-repeat: no-repeat;
+       // Card happy News
+     &--happy {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-aquamarine, 0.5),
+        rgba($color-aquamarine-light, 0.2)
+       ),
+       url(../images/customer.png);
+       background-repeat: no-repeat;
+    }
+      // Card happy PHS
+     &--phs {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-aquamarine, 0.45),
+        rgba($color-aquamarine-light, 0.2)
+       ),
+       url(../images/phs_team_pict.PNG);
+       background-repeat: no-repeat;
+    }
      }
+
+     
+
 
      &--back {
       background-color: $color-white;
@@ -561,6 +588,7 @@ body {
       font-size: 1.4rem;
       text-transform: uppercase;
       margin-bottom: 3rem;
+      
     }
     // Title Front Card 
     &__title {
@@ -582,8 +610,8 @@ body {
       border-top-right-radius: 3px;
       background-image: linear-gradient(
         to top right,
-        rgba($color-primary-dark, 0.65),
-        rgba($color-primary-light, 0.65)
+        rgba($color-aquamarine, 0.45),
+        rgba($color-aquamarine-light, 0.2)
       ),
       url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
     }
@@ -658,6 +686,8 @@ body {
     }
    }
 }
+
+
 
 /* --------------contact form------------- */
 

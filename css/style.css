@@ -53,7 +53,7 @@ body {
 }
 .navigation__menu li:hover {
   cursor: pointer;
-  color: #7FFFD4;
+  color: #00A6A7;
   transition: all ease 0.5s;
 }
 
@@ -458,7 +458,15 @@ body {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
 }
 .card__side--front {
-  background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.7)), url(../images/daredevil.png);
+  background-image: linear-gradient(to right bottom, rgba(0, 166, 167, 0.45), rgba(156, 248, 217, 0.2)), url(../images/daredevil.png);
+  background-repeat: no-repeat;
+}
+.card__side--front--happy {
+  background-image: linear-gradient(to right bottom, rgba(0, 166, 167, 0.5), rgba(156, 248, 217, 0.2)), url(../images/customer.png);
+  background-repeat: no-repeat;
+}
+.card__side--front--phs {
+  background-image: linear-gradient(to right bottom, rgba(0, 166, 167, 0.45), rgba(156, 248, 217, 0.2)), url(../images/phs_team_pict.PNG);
   background-repeat: no-repeat;
 }
 .card__side--back {
@@ -505,7 +513,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+  background-image: linear-gradient(to top right, rgba(0, 166, 167, 0.45), rgba(156, 248, 217, 0.2)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
 }
 .card__heading {
   text-align: center;
