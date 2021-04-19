@@ -21,7 +21,21 @@ document.querySelector('#redirect').addEventListener('click', () => {
   if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
     window.open("https://youtu.be/B-olvh8Y2_Q?t=3245", "Nouvelle fenêtre")
   }
-}); 
+});
+
+// Listener on #marvelQuizz, on click 
+document.querySelector('#marvelQuizz').addEventListener('click', () => {
+  if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
+    window.open("https://marvel-quiz-app.netlify.app/")
+  }
+});
+
+// Listener on #marvelQuizzGit, on click 
+document.querySelector('#marvelQuizzGit').addEventListener('click', () => {
+  if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
+    window.open("https://github.com/Pacorabo2/marvelquizz")
+  }
+});
 
 // Listener on #phsTeam, on click 
 document.querySelector('#phsTeam').addEventListener('click', () => {
@@ -51,19 +65,19 @@ document.querySelector('#phsTeamCard').addEventListener('click', () => {
   }
 });
 
-// Listener on #chatSite, on click 
-document.querySelector('#chatSite').addEventListener('click', () => {
-  if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
-    window.open("https://react-chat-app-porfolio.netlify.app/")
-  }
-});
+// // Listener on #chatSite, on click 
+// document.querySelector('#chatSite').addEventListener('click', () => {
+//   if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
+//     window.open("https://react-chat-app-porfolio.netlify.app/")
+//   }
+// });
 
-// Listener on #chatGithub, on click 
-document.querySelector('#chatGithub').addEventListener('click', () => {
-  if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
-    window.open("https://github.com/Pacorabo2/React-chat-app-pn")
-  }
-});
+// // Listener on #chatGithub, on click 
+// document.querySelector('#chatGithub').addEventListener('click', () => {
+//   if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
+//     window.open("https://github.com/Pacorabo2/React-chat-app-pn")
+//   }
+// });
 
 function submitForm(e) {
   e.preventDefault();
