@@ -68,12 +68,15 @@ document.querySelector('#phsTeamCard').addEventListener('click', () => {
 
 
 // Listener for event on Skills
-const leftAnimTxt = document.querySelector('.skills__skills-text-section')
+const skillsLeft = document.querySelector('.skills__skills-text-section')
+const skillsRight = document.querySelector('.skills__skill-img')
 window.addEventListener('scroll', () => {
-  if(window.scrollY > 250) {
-    leftAnimTxt.classList.add('leftAnimTxt')
+  if(window.scrollY > 400) {
+    skillsLeft.classList.add('appearLeft')
+    skillsRight.classList.add('appearRight')
   } else {
-    leftAnimTxt.classList.remove('leftAnimTxt')
+    skillsLeft.classList.remove('appearLeft')
+    skillsRight.classList.remove('appearRight')
   }
 })
 

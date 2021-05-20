@@ -84,7 +84,7 @@ body {
   background-image: linear-gradient(180deg, rgb(17,17,17) 15%, transparent);
   opacity: 0;
   transform: translateY(-50px);
-  animation: apparition 0.5s 1.8s ease-out forwards;
+  animation: apparition 0.5s 2.2s ease-out forwards;
   
   
     
@@ -156,7 +156,7 @@ body {
   border-right: 2px solid;
   white-space:initial ;
   overflow: hidden;
-  animation: ecriture 1.2s steps(20), animate .4s step-end infinite alternate;
+  animation: ecriture 2.2s steps(30), animate .5s step-end infinite alternate;
   }
 
   /* --------- Typewriter Text animation -------------*/
@@ -189,26 +189,26 @@ body {
   /*------------ Class added on scrol animation --------*/
   .appearLeft {
     transform: translateX(-300px);
-    animation: apparition 0.8s 0.2s ease-out;
+    animation: apparition 0.8s 0.2s ease-out forwards;
   }
 
   .appearRight {
     transform: translateX(300px);
-    animation: apparition 0.8s 0.2s ease-out;
+    animation: apparition 0.8s 0.2s ease-out forwards;
   }
 
   .appearUp {
     transform: translateY(300px);
-    animation: apparition 0.8s 0.2s ease-out;
+    animation: apparition 0.8s 0.2s ease-out forwards;
   }
 
   .appearDown {
     transform: translateY(-300px);
-    animation: apparition 0.8s 0.2s ease-out;
+    animation: apparition 0.8s 0.2s ease-out forwards;
   }
 
   .reveal {
-    animation: apparition 0.8s 0.2s ease-out;
+    animation: apparition 0.8s 0.2s ease-out forwards;
   }
 
   /*------- end of Class ads on scrol animation ------*/
@@ -222,7 +222,7 @@ body {
   line-height: 1.3rem;
   opacity: 0;
   transform: translateX(-150px);
-  animation: apparition 0.5s 2s ease-out forwards;
+  animation: apparition 0.5s 2.8s ease-out forwards;
 
 }
 
@@ -232,7 +232,7 @@ body {
   margin-top: 3.8em;
   opacity: 0;
   transform: translateY(150px);
-  animation: apparition 0.5s 2.2s ease-out forwards;
+  animation: apparition 0.5s 2.4s ease-out forwards;
 
   &__download-cv-btn {
     background: linear-gradient(90deg, #04D9D9, #03A6A6);
@@ -276,7 +276,7 @@ body {
   height: 500px;
   opacity: 0;
   transform: translateX(150px);
-  animation: apparition 0.5s 2.4s ease-out forwards;
+  animation: apparition 0.5s 2.6s ease-out forwards;
 }
 
 .main__model img {
@@ -302,6 +302,12 @@ body {
 
 .skills__skills-text-section {
   width: 30em;
+  opacity: 0;
+
+  &.appearLeft {
+    transform: translateX(-300px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
 }
 
 .skills__skills-heading span {
@@ -377,7 +383,12 @@ body {
 .skills__skill-img {
   width: 36em;
   height: 33em;
-  /* border: 1px solid white; */
+  opacity: 0;
+
+  &.appearRight {
+    transform: translateX(300px);
+    animation: apparition 0.5s 0.8s ease-out forwards;
+  }
 
   &__heading {
     color: #ffffff;
