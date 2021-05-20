@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest" crossorigin=“use-credentials”>
   <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
@@ -185,7 +185,7 @@
     <!-- heading -->
     <div class="introduction__heading">
       <h2>Je me présente</h2>
-      <p>Salut ! Moi, c'est Nicolas. J'ai 36 ans, j'habite à Nîmes, dans le Gard.</p>
+      <p>Bonjour ! Moi, c'est Nicolas. J'ai 36 ans, j'habite à Nîmes, dans le Gard.</p>
       <p>Reconverti dans le domaine du développement Web, j'aspire à évoluer dans ce monde que je trouve fascinant.</p>
       <p>Passionné de photo, de vidéo, j'ai la chance de pouvoir mettre à disposition mes compétences dans ce domaine au profit d'une association. <a id="phsTeam">Planète handisport</a></p>
       <p>La vidéo ci-dessous est ma dernière réalisation en date pour cette association. J'ai réalisé les prises de vue au sol, les prises de vue aériennes, le montage et la post-production.</p>
@@ -209,11 +209,11 @@
   <!-- -----------------------services section------------------- -->
   <section id="services">
     <!-- heading -->
-    <h2>Skills</h2>
+    <h2 id="servicesTitle">Skills</h2>
     <!-- services-box-container -->
     <div class="services__box-container">
       <!-- service-box -->
-      <div class="services__box-container__service-box">
+      <div class="services__box-container__service-box" id="frontEnd">
         <!-- icon -->
         <i class="fas fa-code"></i>
         <!-- heading -->
@@ -228,7 +228,7 @@
         </ul>
       </div>
       <!-- service-box -->
-      <div class="services__box-container__service-box">
+      <div class="services__box-container__service-box" id="backEnd">
         <!-- icon -->
         <i class="fas fa-database"></i>
         <!-- heading -->
@@ -243,7 +243,7 @@
           </ul>
       </div>
       <!-- service-box -->
-      <div class="services__box-container__service-box">
+      <div class="services__box-container__service-box" id="medias">
         <!-- icon -->
         <i class="fas fa-photo-video"></i>
         <!-- heading -->
@@ -258,7 +258,7 @@
         </ul>
       </div>
       <!-- service-box -->
-      <div class="services__box-container__service-box">
+      <div class="services__box-container__service-box" id="webQuality">
         <!-- icon -->
         <i class="far fa-chart-bar"></i>
         <!-- heading -->
