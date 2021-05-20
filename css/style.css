@@ -33,8 +33,8 @@ body {
   background-image: linear-gradient(180deg, #111111 15%, transparent);
   opacity: 0;
   transform: translateY(-50px);
-  -webkit-animation: apparition 3.5s 2.2s ease-out forwards;
-          animation: apparition 3.5s 2.2s ease-out forwards;
+  -webkit-animation: apparition 0.5s 2.2s ease-out forwards;
+          animation: apparition 0.5s 2.2s ease-out forwards;
 }
 .navigation__logo {
   height: 7em;
@@ -375,6 +375,13 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.introduction__heading__par {
+  opacity: 0;
+}
+.introduction__heading__par.reveal {
+  -webkit-animation: apparition 0.8s 0.2s ease-out forwards;
+          animation: apparition 0.8s 0.2s ease-out forwards;
+}
 
 .introduction__heading h2 {
   margin: 0 0 0.8em 0;
@@ -384,8 +391,8 @@ body {
   opacity: 0;
 }
 .introduction__heading h2.reveal {
-  -webkit-animation: apparition 0.8s 0.2s ease-out forwards;
-          animation: apparition 0.8s 0.2s ease-out forwards;
+  -webkit-animation: apparition 1s 0.2s ease-out forwards;
+          animation: apparition 1s 0.2s ease-out forwards;
 }
 
 .introduction__heading p {
@@ -394,12 +401,6 @@ body {
   margin-top: 0.8em;
   color: #8a94a7c0;
   line-height: 1.3rem;
-  opacity: 0;
-}
-
-.introduction__heading p.reveal {
-  -webkit-animation: apparition 0.8s 0.2s ease-out forwards;
-          animation: apparition 0.8s 0.2s ease-out forwards;
 }
 
 .introduction__heading a {
@@ -414,6 +415,12 @@ body {
 
 .introduction__video {
   margin-top: 4.5em;
+  opacity: 0;
+}
+.introduction__video.appearDown {
+  transform: translateY(300px);
+  -webkit-animation: apparition 0.8s 0.2s ease-out forwards;
+          animation: apparition 0.8s 0.2s ease-out forwards;
 }
 
 .introduction__video iframe {

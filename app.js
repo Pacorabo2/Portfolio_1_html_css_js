@@ -83,9 +83,9 @@ window.addEventListener('scroll', () => {
 
 // Listener for event on introduction section
 const introductionHeading = document.querySelector('.introduction__heading h2')
-const introductionParagraph = document.querySelector('.introduction__heading p')
+const introductionParagraph = document.querySelector('.introduction__heading__par')
 window.addEventListener('scroll', () => {
-  if(window.scrollY > 700) {
+  if(window.scrollY > 1300) {
     introductionHeading.classList.add('reveal')
     introductionParagraph.classList.add('reveal')
   } else {
@@ -97,10 +97,18 @@ window.addEventListener('scroll', () => {
 // Listener for event on introduction section
 const serviceTitle = document.querySelector('#services h2, #frontEnd, #backEnd')
 window.addEventListener('scroll', () => {
-  if(window.scrollY > 1900) {
+  if(window.scrollY > 1500) {
     serviceTitle.classList.add('appear')
   } else {
     serviceTitle.classList.remove('appear')
+  }
+})
+
+// Listener for on introduction video
+const videoContainer = document.querySelector('.introduction__video')
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 1550) {
+    videoContainer.classList.add('appearDown')
   }
 })
 
