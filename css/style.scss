@@ -289,6 +289,7 @@ body {
 
 #skills {
   width: 90%;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -437,6 +438,11 @@ body {
   color: #ffffff;
   font-size: 2.5rem;
   font-weight: 600;
+  opacity: 0;
+
+  &.reveal {
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
 }
 
 .introduction__heading p {
@@ -445,6 +451,15 @@ body {
   margin-top: 0.8em;
   color: #8a94a7c0;
   line-height: 1.3rem;
+  opacity: 0;
+
+  
+}
+
+.introduction__heading p {
+  &.reveal {
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
 }
 
 .introduction__heading a {

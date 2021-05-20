@@ -80,23 +80,17 @@ window.addEventListener('scroll', () => {
   }
 })
 
-// Listener for event on Skills Img
-const rigthAnimImg = document.querySelector('.skills__skill-img')
-window.addEventListener('scroll', () => {
-  if(window.scrollY > 250) {
-    rigthAnimImg.classList.add('rigthAnimImg')
-  } else {
-    rigthAnimImg.classList.remove('rigthAnimImg')
-  }
-})
 
 // Listener for event on introduction section
-const introductionSection = document.querySelector('#introduction')
+const introductionHeading = document.querySelector('.introduction__heading h2')
+const introductionParagraph = document.querySelector('.introduction__heading p')
 window.addEventListener('scroll', () => {
   if(window.scrollY > 700) {
-    introductionSection.classList.add('appear')
+    introductionHeading.classList.add('reveal')
+    introductionParagraph.classList.add('reveal')
   } else {
-    introductionSection.classList.remove('appear')
+    introductionHeading.classList.remove('reveal')
+    introductionParagraph.classList.remove('reveal')
   }
 })
 
