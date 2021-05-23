@@ -503,12 +503,19 @@ body {
   padding-bottom: 3.5em;
 }
 
+
+
 #services h2{
   margin: 0 0 0.8em 0;
   color: #ffffff;
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
+  opacity: 0;
+
+  &.reveal {
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
 }
 
 .services__box-container {
@@ -517,6 +524,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
+  // opacity: 0;
 
   &__service-box {
     display: flex;
@@ -555,6 +563,42 @@ body {
     color: #e4e4e4;
     margin-bottom: 1em;
     font-size: 1.2rem;
+  }
+}
+
+#frontEnd {
+  opacity: 0;
+
+  &.appearLeft {
+    transform: translateX(-300px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
+}
+
+#backEnd {
+  opacity: 0;
+
+  &.appearRight {
+    transform: translateX(300px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
+}
+
+#medias {
+  opacity: 0;
+
+  &.appearDown {
+    transform: translateY(300px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
+}
+
+#webQuality {
+  opacity: 0;
+
+  &.appearDown {
+    transform: translateY(300px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
   }
 }
 

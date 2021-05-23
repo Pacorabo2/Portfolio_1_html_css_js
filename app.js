@@ -66,7 +66,8 @@ document.querySelector('#phsTeamCard').addEventListener('click', () => {
   }
 });
 
-
+// ---------------- Scroll Mes compétences => skills__skills-text-section -------
+// ---------------- Apparition Gauche & Droite -------
 // Listener for event on Skills
 const skillsLeft = document.querySelector('.skills__skills-text-section')
 const skillsRight = document.querySelector('.skills__skill-img')
@@ -80,7 +81,8 @@ window.addEventListener('scroll', () => {
   }
 })
 
-
+// ---------------- Scroll Je me Présente =>  introduction__heading h2-------
+// ---------------- Apparition fondu au noir -------
 // Listener for event on introduction section
 const introductionHeading = document.querySelector('.introduction__heading h2')
 const introductionParagraph = document.querySelector('.introduction__heading__par')
@@ -94,16 +96,6 @@ window.addEventListener('scroll', () => {
   }
 })
 
-// Listener for event on introduction section
-const serviceTitle = document.querySelector('#services h2, #frontEnd, #backEnd')
-window.addEventListener('scroll', () => {
-  if(window.scrollY > 1500) {
-    serviceTitle.classList.add('appear')
-  } else {
-    serviceTitle.classList.remove('appear')
-  }
-})
-
 // Listener for on introduction video
 const videoContainer = document.querySelector('.introduction__video')
 window.addEventListener('scroll', () => {
@@ -112,31 +104,51 @@ window.addEventListener('scroll', () => {
   }
 })
 
-// Listener for event on introduction section
+// ---------------- Scroll Skills =>  servicesTitle-------
+// ---------------- Apparition fondu au noir -------
+// Listener for event on services Title section
+const skillsTitle = document.querySelector('#servicesTitle')
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 2100) {
+    skillsTitle.classList.add('reveal')
+  } else {
+    skillsTitle.classList.remove('reveal')
+  }
+})
+// Listener for event on services Paragraphs section
 const frontEnd = document.querySelector('#frontEnd')
 const backEnd = document.querySelector('#backEnd')
 window.addEventListener('scroll', () => {
-  if(window.scrollY > 2000) {
-    frontEnd.classList.add('leftAnimTxt')
-    backEnd.classList.add('rigthAnimImg')
+  if(window.scrollY > 2200) {
+    frontEnd.classList.add('appearLeft')
+    backEnd.classList.add('appearRight')
   } else {
-    frontEnd.classList.remove('leftAnimTxt')
-    backEnd.classList.remove('rigthAnimImg')
+    frontEnd.classList.remove('appearLeft')
+    backEnd.classList.remove('appearRight')
   }
 })
 
-// Listener for event on introduction section
 const medias = document.querySelector('#medias')
 const webQuality = document.querySelector('#webQuality')
 window.addEventListener('scroll', () => {
   if(window.scrollY > 2500) {
-    medias.classList.add('rigthAnimImg')
-    webQuality.classList.add('leftAnimTxt')
+    medias.classList.add('appearDown')
+    webQuality.classList.add('appearDown')
   } else {
-    medias.classList.remove('leftAnimTxt')
-    webQuality.classList.remove('rigthAnimImg')
+    medias.classList.remove('appearDown')
+    webQuality.classList.remove('appearDown')
   }
 })
+
+
+
+
+
+
+
+
+
+
 
 function submitForm(e) {
   e.preventDefault();
