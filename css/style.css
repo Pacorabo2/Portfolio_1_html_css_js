@@ -66,7 +66,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90vw;
+  width: 100vw;
   height: 100vh;
   z-index: 1;
   margin: 4em auto 0 auto;
@@ -75,7 +75,7 @@ body {
 #main::before {
   content: "";
   position: absolute;
-  width: 90vw;
+  width: 100vw;
   height: 100vh;
   top: -15%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%);
@@ -238,7 +238,7 @@ body {
 
 /* --------- Skills --------------- */
 #skills {
-  width: 90%;
+  width: 90vw;
   height: 100vh;
   display: flex;
   justify-content: space-around;
@@ -728,7 +728,7 @@ body {
 
 /* --------------contact form------------- */
 #contact {
-  width: 90%;
+  width: 90vw;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -824,7 +824,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .contactMe.phone {
   opacity: 0;
 }
@@ -1052,5 +1051,42 @@ body {
   }
   .services__box-container__services {
     width: 100%;
+  }
+
+  #contact {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contact h3 {
+    font-size: 1.1rem;
+  }
+
+  #contact__textParagraph {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contactMe {
+    width: 100%;
+  }
+  .contactMe.phone i {
+    width: 100%;
+  }
+  .contactMe.mail i {
+    width: 100%;
+  }
+
+  .form__title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  #contact form {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */
