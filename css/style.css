@@ -63,19 +63,19 @@ body {
 
 /* ------------main-------------- */
 #main {
-  width: 90%;
-  height: 100vh;
-  z-index: 1;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 90vw;
+  height: 100vh;
+  z-index: 1;
   margin: 4em auto 0 auto;
 }
 
 #main::before {
   content: "";
   position: absolute;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
   top: -15%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%);
@@ -728,31 +728,6 @@ body {
 }
 
 /* --------------contact form------------- */
-/*
-.appearLeft {
-    transform: translateX(-300px);
-    animation: apparition 0.8s 0.2s ease-out forwards;
-  }
-
-  .appearRight {
-    transform: translateX(300px);
-    animation: apparition 0.8s 0.2s ease-out forwards;
-  }
-
-  .appearUp {
-    transform: translateY(300px);
-    animation: apparition 0.8s 0.2s ease-out forwards;
-  }
-
-  .appearDown {
-    transform: translateY(-300px);
-    animation: apparition 0.8s 0.2s ease-out forwards;
-  }
-
-  .reveal {
-    animation: apparition 0.8s 0.2s ease-out forwards;
-  }
-*/
 #contact {
   width: 90%;
   margin-left: auto;
@@ -987,4 +962,43 @@ body {
 .menu-icon,
 .menu-btn {
   display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #main {
+    flex-direction: column;
+    border: 1px solid red;
+    text-align: center;
+    height: auto;
+    margin-top: 8rem;
+  }
+
+  #main::before {
+    height: auto;
+  }
+
+  .main__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
+  .main__text__title {
+    width: 100%;
+    height: 5em;
+    font-size: 1.5rem;
+  }
+
+  .main__btns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__btns__download-cv-btn {
+    margin: 0 0 1.5em 0;
+  }
+
+  .main__model {
+    width: 90%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */
