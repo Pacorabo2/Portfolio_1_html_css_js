@@ -839,6 +839,32 @@ body {
 
 /* --------------contact form------------- */
 
+/*
+.appearLeft {
+    transform: translateX(-300px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
+
+  .appearRight {
+    transform: translateX(300px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
+
+  .appearUp {
+    transform: translateY(300px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
+
+  .appearDown {
+    transform: translateY(-300px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
+
+  .reveal {
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
+*/
+
 #contact {
   width: 90%;
   margin-left: auto;
@@ -855,6 +881,21 @@ body {
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
+  opacity: 0;
+
+  &.appearDown {
+    transform: translateY(-300px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
+}
+
+#contact h3 {
+  opacity: 0;
+
+  &.appearUp {
+    transform: translateY(300px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }  
 }
 
 #contact p {
@@ -862,6 +903,12 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: center;
+  opacity: 0;
+
+  &.appearUp {
+    transform: translateY(300px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
 }
 
 #contact__textParagraph {
@@ -918,8 +965,35 @@ body {
   }
 }
 
+.contactMe {
+
+  &.phone {
+    opacity: 0;
+
+    &.appearLeft {
+      transform: translateX(-300px);
+      animation: apparition 0.8s 0.2s ease-out forwards;
+    }
+  }
+
+  &.mail {
+    opacity: 0;
+
+    &.appearRight {
+      transform: translateX(300px);
+      animation: apparition 0.8s 0.2s ease-out forwards;
+    }
+  }
+}
+
 .form__title {
   margin-top: 5em;
+  opacity: 0;
+
+  &.appearUp {
+    transform: translateY(300px);
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
 }
 
 #contact form {
@@ -929,6 +1003,11 @@ body {
   align-items: center;
   flex-direction: column;
   margin-top: 2em;
+  opacity: 0;
+
+  &.reveal {
+    animation: apparition 0.8s 0.2s ease-out forwards;
+  }
 }
 
 #contact form input, #contact form textarea {

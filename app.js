@@ -156,6 +156,48 @@ window.addEventListener('scroll', () => {
 })
 
 
+const formtitle = document.querySelector('#contact h2')
+const joinTitle = document.querySelector('#contact h3')
+const parHeading = document.querySelector('#contact p')
+const phoneSection = document.querySelector('.contactMe.phone')
+const mailSection = document.querySelector('.contactMe.mail')
+const titleOfTheForm = document.querySelector('.form__title')
+const form = document.querySelector('form')
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 3700) {
+    formtitle.classList.add('appearDown')
+  } else {
+    formtitle.classList.remove('appearDown')
+  }
+
+  if (window.scrollY > 3900) {
+    joinTitle.classList.add('appearUp')
+    parHeading.classList.add('appearUp')
+  } else {
+    joinTitle.classList.remove('appearUp')
+    parHeading.classList.remove('appearUp')
+  }
+
+  if (window.scrollY > 4000) {
+    phoneSection.classList.add('appearLeft')
+    mailSection.classList.add('appearRight')
+  } else {
+    phoneSection.classList.remove('appearLeft')
+    mailSection.classList.remove('appearRight')
+  }
+
+  if (window.scrollY > 4100) {
+    titleOfTheForm.classList.add('appearUp')
+  } else {
+    titleOfTheForm.classList.remove('appearUp')
+  }
+
+  if(window.scrollY > 4200) {
+    form.classList.add('reveal')
+  } else {
+    form.classList.remove('reveal')
+  }
+})
 
 
 
