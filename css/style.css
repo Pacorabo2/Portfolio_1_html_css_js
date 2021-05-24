@@ -272,7 +272,6 @@ body {
 .skills__skills-heading h2 {
   color: #ffffff;
   font-size: 3.3rem;
-  margin: 0%;
   font-weight: 400;
   letter-spacing: 1px;
 }
@@ -967,7 +966,6 @@ body {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #main {
     flex-direction: column;
-    border: 1px solid red;
     text-align: center;
     height: auto;
     margin-top: 8rem;
@@ -1000,5 +998,35 @@ body {
   .main__model {
     width: 90%;
     margin: 0 auto;
+  }
+
+  #skills {
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid red;
+  }
+
+  .skills__skills-text-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills__skills-heading {
+    border: 1px solid blue;
+  }
+  .skills__skills-heading h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .skills__skill-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .skills__skill-img__heading {
+    margin-top: 5rem;
   }
 }/*# sourceMappingURL=style.css.map */
