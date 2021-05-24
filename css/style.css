@@ -1003,7 +1003,6 @@ body {
   #skills {
     flex-direction: column;
     height: 100%;
-    border: 1px solid red;
   }
 
   .skills__skills-text-section {
@@ -1013,9 +1012,6 @@ body {
     align-items: center;
   }
 
-  .skills__skills-heading {
-    border: 1px solid blue;
-  }
   .skills__skills-heading h2 {
     font-size: 2rem;
     margin-top: 1rem;
@@ -1028,5 +1024,22 @@ body {
   }
   .skills__skill-img__heading {
     margin-top: 5rem;
+  }
+
+  .introduction__heading {
+    width: 100%;
+    margin: 0;
+  }
+  .introduction__heading p {
+    margin-top: 3rem;
+    text-align: start;
+  }
+
+  .introduction__video {
+    width: 100%;
+  }
+
+  #video {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

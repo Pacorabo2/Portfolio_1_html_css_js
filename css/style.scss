@@ -1114,7 +1114,6 @@ body {
   #skills {
     flex-direction: column;
     height: 100%;
-    border: 1px solid red;
   }
 
   .skills__skills-text-section {
@@ -1126,13 +1125,10 @@ body {
 
   .skills__skills-heading {
 
-    border: 1px solid blue;
-
     & h2 {
       font-size: 2rem;
       margin-top: 1rem;
     }
-
   }
 
   .skills__skill-img {
@@ -1144,7 +1140,30 @@ body {
       margin-top: 5rem;
     }
   }
+
+  // -------- Introduction Section ------
+
+  .introduction__heading {
+    width: 100%;
+    margin: 0;
+
+    & p {
+      margin-top: 3rem;
+      text-align: start;
+    }
+  }
+
+  .introduction__video {
+    width: 100%;
+  }
+
+  #video {
+    width: 100%;
+  }
 } 
+
+
+
 
 
 
