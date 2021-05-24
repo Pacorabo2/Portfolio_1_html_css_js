@@ -140,8 +140,20 @@ window.addEventListener('scroll', () => {
   }
 })
 
-
-
+const realisationTitle = document.querySelector('#myRealisations h2')
+const cards = document.querySelector('.container')
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 3000) {
+    realisationTitle.classList.add('reveal')
+  } else {
+    realisationTitle.classList.remove('reveal')
+  }
+  if(window.scrollY > 3200) {
+    cards.classList.add('reveal')
+  } else {
+    cards.classList.remove('reveal')
+  }
+})
 
 
 
