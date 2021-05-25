@@ -1,5 +1,5 @@
-// Import queriesSelectors
-import { skillsLeft, skillsRight} from './queriesSelectors.js'
+// Import queriesSelectors as selected
+import * as selected from './queriesSelectors.js'
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -27,8 +27,8 @@ document.querySelector('#redirect').addEventListener('click', () => {
   }
 });
 
-// console.log(skillsLeft);
-// console.log(skillsLeft);
+// console.log(selected.frontEnd);
+// console.log(selected.medias);
 
 // Listener on #marvelQuizz, on click 
 document.querySelector('#marvelQuizz').addEventListener('click', () => {

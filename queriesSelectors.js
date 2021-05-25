@@ -27,4 +27,24 @@ const mailSection = document.querySelector('.contactMe.mail')
 const titleOfTheForm = document.querySelector('.form__title')
 const form = document.querySelector('form')
 
-export { skillsLeft, skillsRight}
+export { 
+  skillsLeft, 
+  skillsRight, 
+  introductionHeading, 
+  introductionParagraph,
+  videoContainer,
+  skillsTitle,
+  frontEnd,
+  backEnd,
+  medias,
+  webQuality,
+  realisationTitle,
+  cards,
+  formtitle,
+  joinTitle,
+  parHeading,
+  phoneSection,
+  mailSection,
+  titleOfTheForm,
+  form
+}
