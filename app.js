@@ -1,3 +1,6 @@
+// Import queriesSelectors
+import { skillsLeft, skillsRight} from './queriesSelectors.js'
+
 // Your web app's Firebase configuration
 var firebaseConfig = {
   apiKey: "AIzaSyBb4ubzd3BLW6xY0vvrFzOjgbkkFEZb_WA",
@@ -23,6 +26,9 @@ document.querySelector('#redirect').addEventListener('click', () => {
     window.open("https://youtu.be/B-olvh8Y2_Q?t=3245", "Nouvelle fenêtre")
   }
 });
+
+// console.log(skillsLeft);
+// console.log(skillsLeft);
 
 // Listener on #marvelQuizz, on click 
 document.querySelector('#marvelQuizz').addEventListener('click', () => {
@@ -69,8 +75,8 @@ document.querySelector('#phsTeamCard').addEventListener('click', () => {
 // ---------------- Scroll Mes compétences => skills__skills-text-section -------
 // ---------------- Apparition Gauche & Droite -------
 // Listener for event on Skills
-const skillsLeft = document.querySelector('.skills__skills-text-section')
-const skillsRight = document.querySelector('.skills__skill-img')
+// const skillsLeft = document.querySelector('.skills__skills-text-section') // A supprimer après import
+// const skillsRight = document.querySelector('.skills__skill-img') // A supprimer après import
 window.addEventListener('scroll', () => {
   if(window.scrollY > 400) {
     skillsLeft.classList.add('appearLeft')
@@ -84,8 +90,8 @@ window.addEventListener('scroll', () => {
 // ---------------- Scroll Je me Présente =>  introduction__heading h2-------
 // ---------------- Apparition fondu au noir -------
 // Listener for event on introduction section
-const introductionHeading = document.querySelector('.introduction__heading h2')
-const introductionParagraph = document.querySelector('.introduction__heading__par')
+const introductionHeading = document.querySelector('.introduction__heading h2') // A supprimer après import
+const introductionParagraph = document.querySelector('.introduction__heading__par') // A supprimer après import
 window.addEventListener('scroll', () => {
   if(window.scrollY > 1300) {
     introductionHeading.classList.add('reveal')
@@ -97,7 +103,7 @@ window.addEventListener('scroll', () => {
 })
 
 // Listener for on introduction video
-const videoContainer = document.querySelector('.introduction__video')
+const videoContainer = document.querySelector('.introduction__video') // A supprimer après import
 window.addEventListener('scroll', () => {
   if (window.scrollY > 1550) {
     videoContainer.classList.add('appearDown')
@@ -107,7 +113,7 @@ window.addEventListener('scroll', () => {
 // ---------------- Scroll Skills =>  servicesTitle-------
 // ---------------- Apparition fondu au noir -------
 // Listener for event on services Title section
-const skillsTitle = document.querySelector('#servicesTitle')
+const skillsTitle = document.querySelector('#servicesTitle') // A supprimer après import
 window.addEventListener('scroll', () => {
   if(window.scrollY > 2100) {
     skillsTitle.classList.add('reveal')
@@ -116,8 +122,8 @@ window.addEventListener('scroll', () => {
   }
 })
 // Listener for event on services Paragraphs section
-const frontEnd = document.querySelector('#frontEnd')
-const backEnd = document.querySelector('#backEnd')
+const frontEnd = document.querySelector('#frontEnd') // A supprimer après import
+const backEnd = document.querySelector('#backEnd') // A supprimer après import
 window.addEventListener('scroll', () => {
   if(window.scrollY > 2200) {
     frontEnd.classList.add('appearLeft')
@@ -128,8 +134,8 @@ window.addEventListener('scroll', () => {
   }
 })
 
-const medias = document.querySelector('#medias')
-const webQuality = document.querySelector('#webQuality')
+const medias = document.querySelector('#medias') // A supprimer après import
+const webQuality = document.querySelector('#webQuality') // A supprimer après import
 window.addEventListener('scroll', () => {
   if(window.scrollY > 2500) {
     medias.classList.add('appearDown')
@@ -140,8 +146,8 @@ window.addEventListener('scroll', () => {
   }
 })
 
-const realisationTitle = document.querySelector('#myRealisations h2')
-const cards = document.querySelector('.container')
+const realisationTitle = document.querySelector('#myRealisations h2') // A supprimer après import
+const cards = document.querySelector('.container') // A supprimer après import
 window.addEventListener('scroll', () => {
   if(window.scrollY > 3000) {
     realisationTitle.classList.add('reveal')
@@ -156,13 +162,13 @@ window.addEventListener('scroll', () => {
 })
 
 
-const formtitle = document.querySelector('#contact h2')
-const joinTitle = document.querySelector('#contact h3')
-const parHeading = document.querySelector('#contact p')
-const phoneSection = document.querySelector('.contactMe.phone')
-const mailSection = document.querySelector('.contactMe.mail')
-const titleOfTheForm = document.querySelector('.form__title')
-const form = document.querySelector('form')
+const formtitle = document.querySelector('#contact h2') // A supprimer après import
+const joinTitle = document.querySelector('#contact h3') // A supprimer après import
+const parHeading = document.querySelector('#contact p') // A supprimer après import
+const phoneSection = document.querySelector('.contactMe.phone') // A supprimer après import
+const mailSection = document.querySelector('.contactMe.mail') // A supprimer après import
+const titleOfTheForm = document.querySelector('.form__title') // A supprimer après import
+const form = document.querySelector('form') // A supprimer après import
 window.addEventListener('scroll', () => {
   if (window.scrollY > 3700) {
     formtitle.classList.add('appearDown')
