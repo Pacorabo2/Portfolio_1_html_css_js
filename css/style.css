@@ -24,17 +24,13 @@ body {
   position: fixed;
   left: 0%;
   top: 0%;
-  width: 100%;
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1em 2.5em;
+  justify-content: space-between;
+  padding: 0 1.5em;
   z-index: 4;
   background-image: linear-gradient(180deg, #111111 15%, transparent);
-  opacity: 0;
-  transform: translateY(-50px);
-  -webkit-animation: apparition 0.5s 2.2s ease-out forwards;
-          animation: apparition 0.5s 2.2s ease-out forwards;
 }
 .navigation__logo {
   height: 7em;
@@ -48,7 +44,7 @@ body {
 }
 .navigation__menu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
   margin: 0%;
 }
@@ -963,6 +959,65 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .navigation {
+    justify-content: space-between;
+    height: 65px;
+    padding: 35px 25px;
+  }
+  .navigation__menu {
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    background-color: #1b1b1b;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .navigation li {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .navigation li a {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 30px 20px;
+    border: 1px solid rgba(38, 38, 38, 0.03);
+  }
+  .navigation li a:hover {
+    color: #ffffff;
+    background-color: #00A6A7;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 5px;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    z-index: 2;
+  }
+
+  nav .menu-icon .nav-icon {
+    background-color: #fff;
+    display: block;
+    position: relative;
+    height: 2px;
+    transition: background 0.2s ease-out;
+    width: 25px;
+  }
+
   #main {
     flex-direction: column;
     text-align: center;
@@ -1088,5 +1143,108 @@ body {
 
   #contact form {
     width: 90%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .navigation {
+    justify-content: space-between;
+    height: 65px;
+    padding: 0px 25px;
+  }
+  .navigation__logo img {
+    height: 70%;
+    margin-top: 1em;
+  }
+  .navigation__menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    background-color: #111111;
+    border-bottom: 4px solid #1b1b1b;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .navigation li {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .navigation li a {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 30px 20px;
+    border: 1px solid rgba(38, 38, 38, 0.03);
+  }
+  .navigation li a:hover {
+    color: #ffffff;
+    background-color: #00A6A7;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 5px;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    z-index: 2;
+  }
+
+  nav .menu-icon .nav-icon {
+    background-color: #ffffffcc;
+    display: block;
+    position: relative;
+    height: 2px;
+    transition: background 0.2s ease-out;
+    width: 25px;
+  }
+
+  nav .menu-icon .nav-icon:before,
+nav .menu-icon .nav-icon:after {
+    background-color: #ffffffcc;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all ease-out 0.2s;
+    width: 100%;
+  }
+
+  nav .menu-icon .nav-icon:before {
+    top: 5px;
+  }
+
+  nav .menu-icon .nav-icon:after {
+    top: -5px;
+  }
+
+  nav .menu-icon .nav-icon,
+nav .menu-icon:checked ~ menu-icon .nav-icon {
+    background-color: transparent;
+  }
+
+  nav .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0px;
+  }
+
+  nav .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+
+  nav .menu-btn:checked ~ .navigation__menu {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
