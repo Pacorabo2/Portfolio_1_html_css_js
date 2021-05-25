@@ -27,9 +27,6 @@ document.querySelector('#redirect').addEventListener('click', () => {
   }
 });
 
-// console.log(selected.frontEnd);
-// console.log(selected.medias);
-
 // Listener on #marvelQuizz, on click 
 document.querySelector('#marvelQuizz').addEventListener('click', () => {
   if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
@@ -72,138 +69,128 @@ document.querySelector('#phsTeamCard').addEventListener('click', () => {
   }
 });
 
-// ---------------- Scroll Mes compétences => skills__skills-text-section -------
-// ---------------- Apparition Gauche & Droite -------
-// Listener for event on Skills
-// const skillsLeft = document.querySelector('.skills__skills-text-section') // A supprimer après import
-// const skillsRight = document.querySelector('.skills__skill-img') // A supprimer après import
+// Listener onScroll to animate aparitions on page
 window.addEventListener('scroll', () => {
-  if(window.scrollY > 400) {
-    skillsLeft.classList.add('appearLeft')
-    skillsRight.classList.add('appearRight')
-  } else {
-    skillsLeft.classList.remove('appearLeft')
-    skillsRight.classList.remove('appearRight')
-  }
+
+  // If scroll = 400 px
+  // Skills Section animations
+  window.scrollY > 400 ? (
+    selected.skillsLeft.classList.add('appearLeft'),
+    selected.skillsRight.classList.add('appearRight')
+  ) : (
+    selected.skillsLeft.classList.remove('appearLeft'),
+    selected.skillsRight.classList.remove('appearRight')
+  )
+
+  // if scroll = 1300 px
+  // Introduction Section animations
+  window.scrollY > 1300 ? (
+    selected.introductionHeading.classList.add('reveal'),
+    selected.introductionParagraph.classList.add('reveal')
+  ) : (
+    selected.introductionHeading.classList.remove('reveal'),
+    selected.introductionParagraph.classList.remove('reveal')
+  )
+
+  // if scroll = 1550 px
+  // Introduction Section video Animation
+  window.scrollY > 1550 ? (
+    selected.videoContainer.classList.add('appearDown')
+  ) : (
+    selected.videoContainer.classList.remove('appearDown')
+  )
+
+  // if scroll = 2100 px
+  // Services Title animations
+  window.scrollY > 2100 ? (
+    selected.skillsTitle.classList.add('reveal')
+  ) : (
+    selected.skillsTitle.classList.remove('reveal')
+  )
+
+  // if scroll = 2200 px
+  // Services Front-end & Back-end paragraphs section animations
+  window.scrollY > 2200 ? (
+    selected.frontEnd.classList.add('appearLeft'),
+    selected.backEnd.classList.add('appearRight')
+  ) : (
+    selected.frontEnd.classList.remove('appearLeft'),
+    selected.backEnd.classList.remove('appearRight')
+  )
+
+  // if scroll = 2500px
+  // Services Medias & Web-Quality paragraphs section animations
+  window.scrollY > 2500 ? (
+    selected.medias.classList.add('appearDown'),
+    selected.webQuality.classList.add('appearDown')
+  ) : (
+    selected.medias.classList.remove('appearDown'),
+    selected.webQuality.classList.remove('appearDown')
+  )
+
+  // if scroll = 3000px
+  // My Realisations Section Title animation
+  window.scrollY > 3000 ? (
+    selected.realisationTitle.classList.add('reveal')
+  ) : (
+    selected.realisationTitle.classList.remove('reveal')
+  )
+
+  // if scroll = 3200px
+  // My Realisations Section Cards animation
+  window.scrollY > 3200 ? (
+    selected.cards.classList.add('reveal')
+  ) : (
+    selected.cards.classList.add('reveal')
+  )
+
+  // if scroll = 3700px
+  // Form Section Title animation
+  window.scrollY > 3700 ? (
+    selected.formtitle.classList.add('appearDown')
+  ) : (
+    selectedformtitle.classList.add('appearDown')
+  )
+
+  // if scroll = 3900px
+  // Form Section Title paragraph animation
+  window.scrollY > 3900 ? (
+    selected.joinTitle.classList.add('appearUp'),
+    selected.parHeading.classList.add('appearUp')
+  ) : (
+    selected.joinTitle.classList.remove('appearUp'),
+    selected.parHeading.classList.remove('appearUp')
+  )
+
+  // if scroll = 4000px
+  // Form Section phone & mail paragraph animation
+  window.scrollY > 4000 ? (
+    selected.phoneSection.classList.add('appearLeft'),
+    selected.mailSection.classList.add('appearRight')
+  ) : (
+    selected.phoneSection.classList.remove('appearLeft'),
+    selected.mailSection.classList.remove('appearRight')
+  )
+
+  // if scroll = 4100px
+  // Form Section description form paragraph animation
+  window.scrollY > 4100 ? (
+    selected.titleOfTheForm.classList.add('appearUp')
+  ) : (
+    selected.titleOfTheForm.classList.remove('appearUp')
+  )
+
+  // if scroll = 4200px
+  // Form Section form reveal animation
+  window.scrollY > 4200 ? (
+    selected.form.classList.add('reveal')
+  ) : (
+    selected.form.classList.remove('reveal')
+  )
 })
 
-// ---------------- Scroll Je me Présente =>  introduction__heading h2-------
-// ---------------- Apparition fondu au noir -------
-// Listener for event on introduction section
-const introductionHeading = document.querySelector('.introduction__heading h2') // A supprimer après import
-const introductionParagraph = document.querySelector('.introduction__heading__par') // A supprimer après import
-window.addEventListener('scroll', () => {
-  if(window.scrollY > 1300) {
-    introductionHeading.classList.add('reveal')
-    introductionParagraph.classList.add('reveal')
-  } else {
-    introductionHeading.classList.remove('reveal')
-    introductionParagraph.classList.remove('reveal')
-  }
-})
-
-// Listener for on introduction video
-const videoContainer = document.querySelector('.introduction__video') // A supprimer après import
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 1550) {
-    videoContainer.classList.add('appearDown')
-  }
-})
-
-// ---------------- Scroll Skills =>  servicesTitle-------
-// ---------------- Apparition fondu au noir -------
-// Listener for event on services Title section
-const skillsTitle = document.querySelector('#servicesTitle') // A supprimer après import
-window.addEventListener('scroll', () => {
-  if(window.scrollY > 2100) {
-    skillsTitle.classList.add('reveal')
-  } else {
-    skillsTitle.classList.remove('reveal')
-  }
-})
-// Listener for event on services Paragraphs section
-const frontEnd = document.querySelector('#frontEnd') // A supprimer après import
-const backEnd = document.querySelector('#backEnd') // A supprimer après import
-window.addEventListener('scroll', () => {
-  if(window.scrollY > 2200) {
-    frontEnd.classList.add('appearLeft')
-    backEnd.classList.add('appearRight')
-  } else {
-    frontEnd.classList.remove('appearLeft')
-    backEnd.classList.remove('appearRight')
-  }
-})
-
-const medias = document.querySelector('#medias') // A supprimer après import
-const webQuality = document.querySelector('#webQuality') // A supprimer après import
-window.addEventListener('scroll', () => {
-  if(window.scrollY > 2500) {
-    medias.classList.add('appearDown')
-    webQuality.classList.add('appearDown')
-  } else {
-    medias.classList.remove('appearDown')
-    webQuality.classList.remove('appearDown')
-  }
-})
-
-const realisationTitle = document.querySelector('#myRealisations h2') // A supprimer après import
-const cards = document.querySelector('.container') // A supprimer après import
-window.addEventListener('scroll', () => {
-  if(window.scrollY > 3000) {
-    realisationTitle.classList.add('reveal')
-  } else {
-    realisationTitle.classList.remove('reveal')
-  }
-  if(window.scrollY > 3200) {
-    cards.classList.add('reveal')
-  } else {
-    cards.classList.remove('reveal')
-  }
-})
 
 
-const formtitle = document.querySelector('#contact h2') // A supprimer après import
-const joinTitle = document.querySelector('#contact h3') // A supprimer après import
-const parHeading = document.querySelector('#contact p') // A supprimer après import
-const phoneSection = document.querySelector('.contactMe.phone') // A supprimer après import
-const mailSection = document.querySelector('.contactMe.mail') // A supprimer après import
-const titleOfTheForm = document.querySelector('.form__title') // A supprimer après import
-const form = document.querySelector('form') // A supprimer après import
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 3700) {
-    formtitle.classList.add('appearDown')
-  } else {
-    formtitle.classList.remove('appearDown')
-  }
-
-  if (window.scrollY > 3900) {
-    joinTitle.classList.add('appearUp')
-    parHeading.classList.add('appearUp')
-  } else {
-    joinTitle.classList.remove('appearUp')
-    parHeading.classList.remove('appearUp')
-  }
-
-  if (window.scrollY > 4000) {
-    phoneSection.classList.add('appearLeft')
-    mailSection.classList.add('appearRight')
-  } else {
-    phoneSection.classList.remove('appearLeft')
-    mailSection.classList.remove('appearRight')
-  }
-
-  if (window.scrollY > 4100) {
-    titleOfTheForm.classList.add('appearUp')
-  } else {
-    titleOfTheForm.classList.remove('appearUp')
-  }
-
-  if(window.scrollY > 4200) {
-    form.classList.add('reveal')
-  } else {
-    form.classList.remove('reveal')
-  }
-})
 
 
 
