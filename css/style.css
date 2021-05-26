@@ -594,7 +594,7 @@ body {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
 }
 .card__side--front {
-  background-image: linear-gradient(to right bottom, rgba(0, 166, 167, 0.45), rgba(156, 248, 217, 0.2)), url(../images/daredevil.png);
+  background-image: linear-gradient(to right bottom, rgba(0, 166, 167, 0.45), rgba(156, 248, 217, 0.2)), url("");
   background-repeat: no-repeat;
   background-size: contain;
 }

@@ -32,6 +32,8 @@ fetch('https://firestore.googleapis.com/v1/projects/portfolio-data-9d1f0/databas
       // Ajout de la classe .card__side card__side--front
       cardSideCardFront.classList.add('card__side')
       cardSideCardFront.classList.add('card__side--front')
+      // Ajout de la propriété backgroundimage dynamiquement
+      cardSideCardFront.style.backgroundImage =`url(${site.ImageUrl.stringValue})`
       // Ajout de la div à .card
       card.appendChild(cardSideCardFront)
 
