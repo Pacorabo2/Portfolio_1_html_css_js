@@ -553,8 +553,8 @@ body {
   opacity: 0;
 }
 #myRealisations h2.reveal {
-  -webkit-animation: apparition 0.8s 0.2s ease-out forwards;
-          animation: apparition 0.8s 0.2s ease-out forwards;
+  -webkit-animation: apparition 1s 0.2s ease-out forwards;
+          animation: apparition 1s 0.2s ease-out forwards;
 }
 
 .container {
@@ -565,8 +565,8 @@ body {
   opacity: 0;
 }
 .container.reveal {
-  -webkit-animation: apparition 0.8s 0.2s ease-out forwards;
-          animation: apparition 0.8s 0.2s ease-out forwards;
+  -webkit-animation: apparition 1s 0.2s ease-out forwards;
+          animation: apparition 1s 0.2s ease-out forwards;
 }
 
 .card {

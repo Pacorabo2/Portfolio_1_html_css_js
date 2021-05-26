@@ -141,7 +141,7 @@ window.addEventListener('scroll', () => {
   window.scrollY > 3200 ? (
     selected.cards.classList.add('reveal')
   ) : (
-    selected.cards.classList.add('reveal')
+    selected.cards.classList.remove('reveal')
   )
 
   // if scroll = 3700px
@@ -149,7 +149,7 @@ window.addEventListener('scroll', () => {
   window.scrollY > 3700 ? (
     selected.formtitle.classList.add('appearDown')
   ) : (
-    selectedformtitle.classList.add('appearDown')
+    selected.formtitle.classList.remove('appearDown')
   )
 
   // if scroll = 3900px
