@@ -17,6 +17,12 @@ const webQuality = document.querySelector('#webQuality')
 // ----------- My realisations section querySelectors -----------------
 const realisationTitle = document.querySelector('#myRealisations h2')
 const cards = document.querySelector('.container')
+// To create card dynamically
+const cardThemeBox = document.querySelector('.card__theme-box') // à Ajouter
+const cardDetails = document.querySelector('.card__details') // à Ajouter
+const cardDetailsList = document.querySelector('.card__details__list') // a Ajouter
+const cardDetailsBtnSite = document.querySelector('.siteLink') // à Ajouter
+const cardDetailBtnGit = document.querySelector('.gitLink') // à Ajouter
 
 // ----------- Contact section querySelectors -----------------
 const formtitle = document.querySelector('#contact h2')
@@ -46,5 +52,10 @@ export {
   phoneSection,
   mailSection,
   titleOfTheForm,
-  form
+  form,
+  cardThemeBox,
+  cardDetails,
+  cardDetailsList,
+  cardDetailsBtnSite,
+  cardDetailBtnGit
 }
