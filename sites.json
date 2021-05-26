@@ -1,0 +1,47 @@
+{
+  "documents": [
+    {
+      "name": "projects/portfolio-data-9d1f0/databases/(default)/documents/projects/SICjWiKLlYoSmu4ED35g",
+      "fields": {
+        "ImageUrl": {
+          "stringValue": "https://firebasestorage.googleapis.com/v0/b/portfolio-data-9d1f0.appspot.com/o/daredevil.png?alt=media&token=e6aa00bf-1a39-4fe1-839e-189de700de42"
+        },
+        "skills": {
+          "arrayValue": {
+            "values": [
+              {
+                "stringValue": "External API"
+              },
+              {
+                "stringValue": "React Hooks"
+              },
+              {
+                "stringValue": "No SQL"
+              },
+              {
+                "stringValue": "Netlify"
+              },
+              {
+                "stringValue": "Adobe suite"
+              }
+            ]
+          }
+        },
+        "git_link": {
+          "stringValue": "https://github.com/Pacorabo2/marvelquizz"
+        },
+        "title": {
+          "stringValue": "MarvelQuizz"
+        },
+        "technoTitle": {
+          "stringValue": "React"
+        },
+        "url_app": {
+          "stringValue": "https://marvel-quiz-app.netlify.app/"
+        }
+      },
+      "createTime": "2021-05-26T09:32:36.834384Z",
+      "updateTime": "2021-05-26T09:57:56.757898Z"
+    }
+  ]
+}

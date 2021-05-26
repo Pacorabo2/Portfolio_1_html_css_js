@@ -191,12 +191,6 @@ window.addEventListener('scroll', () => {
 
 
 
-
-
-
-
-
-
 function submitForm(e) {
   e.preventDefault();
   console.log("Je suis dans la fonction submitForm");
