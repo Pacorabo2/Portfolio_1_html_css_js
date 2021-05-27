@@ -169,11 +169,11 @@ let contactInfo = firebase.database().ref("infos");
 document.querySelector(".contact-form").addEventListener("submit", submitForm);
 
 // Listener on #redirect, on click 
-// document.querySelector('#redirect').addEventListener('click', () => {
-//   if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
-//     window.open("https://youtu.be/B-olvh8Y2_Q?t=3245", "Nouvelle fenêtre")
-//   }
-// });
+document.querySelector('#redirect').addEventListener('click', () => {
+  if (window.confirm("Une nouvelle fenêtre va s'ouvrir")) {
+    window.open("https://youtu.be/B-olvh8Y2_Q?t=3245", "Nouvelle fenêtre")
+  }
+});
 
 
 

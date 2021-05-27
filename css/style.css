@@ -1143,6 +1143,16 @@ nav .menu-icon:checked ~ menu-icon .nav-icon {
     width: 100%;
   }
 
+  .card__details {
+    margin-top: 0.5rem;
+  }
+  .card__details--btn {
+    flex-direction: column;
+  }
+  .card__details--btn p:last-child {
+    margin-top: 2rem;
+  }
+
   #contact {
     width: 90%;
     align-items: center;
