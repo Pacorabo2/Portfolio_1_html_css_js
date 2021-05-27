@@ -656,40 +656,33 @@ body {
     backface-visibility: hidden; /* We don't want to see the back part of the element. */
     border-radius: 20px 0;
     overflow: hidden; /* The image is overflowing the parent. */
-    box-shadow: 0 2rem 6rem rgba($color-black, 0.15);
+  
 
     &--front {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-aquamarine, 0.45),
-        rgba($color-aquamarine-light, 0.2)
-       ),
-      //  url(../images/daredevil.png);
-      //  url('');
-       background-repeat: no-repeat;
-       background-size: contain;
+      background-repeat: no-repeat;
+      background-size: cover;
        // Card happy News
-     &--happy {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-aquamarine, 0.5),
-        rgba($color-aquamarine-light, 0.2)
-       ),
-       url(../images/customer.png);
-       background-repeat: no-repeat;
-       background-size: cover;
-    }
-      // Card happy PHS
-     &--phs {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($color-aquamarine, 0.45),
-        rgba($color-aquamarine-light, 0.2)
-       ),
-       url(../images/phs_team_pict.PNG);
-       background-repeat: no-repeat;
-       background-size: cover;
-    }
+    //  &--happy {
+    //   background-image: linear-gradient(
+    //     to right bottom,
+    //     rgba($color-aquamarine, 0.5),
+    //     rgba($color-aquamarine-light, 0.2)
+    //    ),
+    //    url(../images/customer.png);
+    //    background-repeat: no-repeat;
+    //    background-size: cover;
+    // }
+    //   // Card happy PHS
+    //  &--phs {
+    //   background-image: linear-gradient(
+    //     to right bottom,
+    //     rgba($color-aquamarine, 0.45),
+    //     rgba($color-aquamarine-light, 0.2)
+    //    ),
+    //    url(../images/phs_team_pict.PNG);
+    //    background-repeat: no-repeat;
+    //    background-size: cover;
+    // }
      }
 
      &--back {

@@ -591,20 +591,8 @@ body {
   border-radius: 20px 0;
   overflow: hidden;
   /* The image is overflowing the parent. */
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
 }
 .card__side--front {
-  background-image: linear-gradient(to right bottom, rgba(0, 166, 167, 0.45), rgba(156, 248, 217, 0.2)), url("");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.card__side--front--happy {
-  background-image: linear-gradient(to right bottom, rgba(0, 166, 167, 0.5), rgba(156, 248, 217, 0.2)), url(../images/customer.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.card__side--front--phs {
-  background-image: linear-gradient(to right bottom, rgba(0, 166, 167, 0.45), rgba(156, 248, 217, 0.2)), url(../images/phs_team_pict.PNG);
   background-repeat: no-repeat;
   background-size: cover;
 }
